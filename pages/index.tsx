@@ -14,7 +14,7 @@ export default function HomePage() {
       </Head>
       <main className="min-h-screen bg-[#1A2025] font-lucidity text-ais-white subpixel-antialiased overflow-x-hidden">
         <section id="appbar" className="flex justify-center">
-          <img src="appbar-bg.svg" className="min-w-[104vw] h-[5rem] object-cover">
+          <img src="appbar-bg.png" className="min-w-[104vw] h-[5rem] object-cover">
 
           </img>
         </section>
