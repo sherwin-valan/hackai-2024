@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import * as React from 'react';
+import AboutSection from '../components/AboutSection';
+import SpeakersSection from '../components/SpeakersSection';
 
 export default function HomePage() {
   return (
@@ -31,7 +33,10 @@ export default function HomePage() {
           </div>
         </section>
         <section id="about">
-          Next section here.
+          <AboutSection/>
+        </section>
+        <section id="speakers">
+          <SpeakersSection/>
         </section>
         <section id="schedule">
 
