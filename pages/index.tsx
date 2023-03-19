@@ -21,7 +21,7 @@ export default function HomePage() {
           </img>
         </section>
         <section id="landing" className="h-[50rem] grid grid-cols-2">
-          <div className="mt-[6rem] px-[6rem] text-center">
+          <div className="mt-[6rem] md:px-[6rem] text-center">
             <div className="py-[2rem] uppercase text-5xl">
               Coming Soon!
               <br/>

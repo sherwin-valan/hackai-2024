@@ -1,9 +1,9 @@
 import {motion} from 'framer-motion';
 import { useState } from 'react';
 
-function Cards()
+function SpeakerCards()
 {
-  const [isHovered1, setHovered1] = useState(false)
+  const [isHovered1, setHovered1] = useState(true)
   const [isHovered2, setHovered2] = useState(false)
   const [isHovered3, setHovered3] = useState(false)
 
@@ -28,84 +28,87 @@ function Cards()
   return(
    <div className="height-60 flex justify-center place-content-center">
       <motion.div 
-        transition={{layout: {duration: 1, type: "spring"}}}
         layout
         onMouseEnter={handleHover1}
-        className="flex"
+        className="flex pl-2 mx-2"
+        transition={{layout: {duration: 0.3, type: "linear", bounce: 0}}}
       >
-        <div className="relative text-black">
-            <img className="w-52 rounded-md" src="/speaker1.png" alt="speakers background image" />
+        <motion.div className="relative text-black mb-20">
+            <motion.img style={{width: isHovered1 ? 250 : 150}} className="h-80 rounded-md object-cover" src="/speaker1.png" alt="speakers background image "/>
             <motion.div 
-              className="absolute w-full py-2.5 top-1/4 text-left pl-4 leading-4"
+              className="absolute bottom-2 text-left pl-4 leading-4"
               animate={{rotate: isHovered1 ? 0 : -90}}
+              transition={{layout: {duration: 1, type: "tween"}}}
             >
-              <h2 className="text-white pt-28 text-xl">Name</h2>
+              <h2 className="text-white text-xl">Name</h2>
               <h2 className="text-white text-base">Title</h2>
             </motion.div>
-        </div>
+        </motion.div>
         {isHovered1 && (
         <motion.div
           initial={{opacity: 0}}
           animate={{opacity: 1}}
           transition={{duration:1}}
           exit={{opacity:0}}
-          className="w-60"
+          className="w-60 pl-2 text-base pt-4"
         >
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
         </motion.div>
         )}
       </motion.div>
       <motion.div 
-        transition={{layout: {duration: 1, type: "spring"}}}
         layout
         onMouseEnter={handleHover2}
-        className="flex"
+        className="flex pl-2 mx-2"
+        transition={{layout: {duration: 0.3, type: "linear", bounce: 0}}}
       >
-        <div className="relative text-black">
-            <img className="w-52 rounded-md" src="/speaker2.png" alt="speakers background image" />
+        <motion.div className="relative text-black mb-20">
+            <motion.img style={{width: isHovered2 ? 250 : 150}} className="h-80 rounded-md object-cover" src="/speaker2.png" alt="speakers background image "/>
             <motion.div 
-              className="absolute w-full py-2.5 top-1/4 text-left pl-4 leading-4"
+              className="absolute bottom-2 text-left pl-4 leading-4"
               animate={{rotate: isHovered2 ? 0 : -90}}
+              transition={{layout: {duration: 1, type: "tween"}}}
             >
-              <h2 className="text-white pt-28 text-xl">Name</h2>
+              <h2 className="text-white text-xl">Name</h2>
               <h2 className="text-white text-base">Title</h2>
             </motion.div>
-        </div>
+        </motion.div>
         {isHovered2 && (
         <motion.div
           initial={{opacity: 0}}
           animate={{opacity: 1}}
           transition={{duration:1}}
           exit={{opacity:0}}
-          className="w-60"
+          className="w-60 pl-2 text-base pt-4"
         >
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
         </motion.div>
         )}
       </motion.div>
       <motion.div 
-        transition={{layout: {duration: 1, type: "spring"}}}
         layout
         onMouseEnter={handleHover3}
-        className="flex"
+        className="flex pl-2 mx-2"
+        transition={{layout: {duration: 0.3, type: "linear", bounce: 0}}}
       >
-        <div className="relative text-black">
-            <img className="w-52 rounded-md" src="/speaker3.png" alt="speakers background image" />
+        <motion.div className="relative text-black mb-20">
+            <motion.img style={{width: isHovered3 ? 250 : 150}} className="h-80 rounded-md object-cover" src="/speaker3.png" alt="speakers background image "/>
             <motion.div 
-              className="absolute w-full py-2.5 top-1/4 text-left pl-4 leading-4"
+              className="absolute bottom-2 text-left pl-4 leading-4"
               animate={{rotate: isHovered3 ? 0 : -90}}
+              transition={{layout: {duration: 1, type: "tween"}}}
             >
-              <h2 className="text-white pt-28 text-xl">Name</h2>
+              <h2 className="text-white text-xl">Name</h2>
               <h2 className="text-white text-base">Title</h2>
             </motion.div>
-        </div>
+        </motion.div>
         {isHovered3 && (
         <motion.div
           initial={{opacity: 0}}
           animate={{opacity: 1}}
           transition={{duration:1}}
           exit={{opacity:0}}
-          className="w-60"
+          className="w-60 pl-2 text-base pt-4"
         >
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
         </motion.div>
@@ -116,4 +119,4 @@ function Cards()
   )
 }
 
-export default Cards;
+export default SpeakerCards;
