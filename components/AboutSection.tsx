@@ -1,7 +1,13 @@
 import * as React from 'react'; 
+import { useRef } from "react";
+import { useInView } from "framer-motion";
+
 
 function AboutSection()
 {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+
     return (
         <div className="mx-auto py-14 px-24 text-white">
             
@@ -9,8 +15,15 @@ function AboutSection()
                 <div className="mb-2 mr-10">
                     <div className="mb-2 md:mb-4 text-xl md:text-3xl font-bold">ABOUT</div>
                 </div>
-                <div className="">
-                    <div className="mb-6">
+                <div ref={ref}>
+                    <div 
+                        className="mb-6"
+                        style={{
+                            transform: isInView ? "none" : "translateY(200px)",
+                            opacity: isInView ? 1 : 0,
+                            transition: "all 1.0s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                          }}
+                    >
                         <div className="text-xl md:text-2xl font-bold flex">
                             <img src="/brain-icon.png" className="mr-3"/>
                             What is HackAI
@@ -19,7 +32,14 @@ function AboutSection()
                         Student-run hackathon organized by the Artificial Intelligence Society at UTD, aiming to connect today's students with the knowledge and resources needed to build Artificial Intelligence related projects in the span of 24 hours.
                         </div>
                     </div>
-                    <div className="mb-6">
+                    <div 
+                        className="mb-6"
+                        style={{
+                            transform: isInView ? "none" : "translateY(200px)",
+                            opacity: isInView ? 1 : 0,
+                            transition: "all 1.0s cubic-bezier(0.17, 0.55, 0.55, 1) 1.5s"
+                          }}
+                    >
                         <div className="text-xl md:text-2xl font-bold flex">
                             <img src="/bullseye-arrow-icon.png" className="mr-3"/>
                             Our Mission
@@ -28,7 +48,14 @@ function AboutSection()
                         We hope to demystify this specialized niche in computer science and bring it forward to students through an AI-related hackathon. We aim for our in-person event to provide both learning and competition opportunities and connect them to professionals who can further guide them in their AI journey.
                         </div>
                     </div>
-                    <div className="mb-6">
+                    <div 
+                        className="mb-6"
+                        style={{
+                            transform: isInView ? "none" : "translateY(200px)",
+                            opacity: isInView ? 1 : 0,
+                            transition: "all 1.0s cubic-bezier(0.17, 0.55, 0.55, 1) 2.5s"
+                          }}
+                    >
                         <div className="text-xl md:text-2xl font-bold flex">
                         <img src="/handshake-icon.png" className="mr-3"/>
                             Why HackAI
