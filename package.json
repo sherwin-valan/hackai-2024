@@ -28,6 +28,7 @@
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
     "force": "^0.0.3",
+    "framer-motion": "^10.6.0",
     "moment": "^2.29.4",
     "next": "13.0.4",
     "prettier": "^2.8.3",
