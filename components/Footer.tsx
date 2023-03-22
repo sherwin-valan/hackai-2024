@@ -26,9 +26,11 @@ function FooterSection()
                     </div>
                 </Box>
                 <div className='flex flex-col'>
-                    <Typography fontFamily={"hind siliguri"} fontWeight={600} className='ml-10' fontSize={25} color="white">
-                        AIS Website
-                    </Typography>
+                    <button onClick={() => window.open("https://www.aisutd.org/", "_blank")}>
+                        <Typography fontFamily={"hind siliguri"} fontWeight={600} className='ml-10' fontSize={25} color="white">
+                            AIS Website
+                        </Typography>
+                    </button>
                     <div className='flex flex-row items-center justify-between'>
                         <EmailOutlinedIcon></EmailOutlinedIcon>
                         <button onClick={() => window.open("https://www.instagram.com/utdais/", "_blank")}><img src='/instagram.svg'/></button>
