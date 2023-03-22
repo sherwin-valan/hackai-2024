@@ -1,11 +1,30 @@
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import 'tailwindcss/tailwind.css';
+import localFont from "@next/font/local";
 
 /**
  * A wrapper for the root website component.
  */
+
+const lucidity = localFont({
+  src: [
+    {
+      path: "../public/fonts/Lucidity-Condensed.ttf",
+    }
+  ]
+});
+
+const cooper = localFont({
+  src: [
+    {
+      path: "../public/fonts/CooperHewitt-Semibold.otf",
+    }
+  ]
+})
+
 export default function MyApp({ Component, pageProps }: AppProps) {
+  
   return (
     <>
       <Head>
@@ -14,6 +33,13 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
           <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
       </Head>
+      <style jsx global>{`
+        :root {
+          /* ... */
+          --lucidity: ${lucidity.style.fontFamily};
+          --cooper: ${cooper.style.fontFamily};
+        }
+      `}</style>
       <Component {...pageProps} />
     </>
   );
