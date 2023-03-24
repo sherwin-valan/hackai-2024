@@ -4,6 +4,37 @@ import AboutSection from '../components/AboutSection';
 import FooterSection from '../components/Footer';
 import SpeakersSection from '../components/SpeakersSection';
 import WorkWithUsSection from '../components/WorkwithUs';
+import Tracks from '../components/Tracks';
+import Schedule from '../components/Schedule';
+
+// interface Card {
+//   element: HTMLElement;
+//   flipped: boolean;
+// }
+
+// const cards: Card[] = [];
+
+// const flipCard = (card: Card) => {
+//   if (card.flipped) {
+//     card.element.classList.remove('card-flip');
+//   } else {
+//     card.element.classList.add('card-flip');
+//   }
+//   card.flipped = !card.flipped;
+// };
+
+// const initCards = () => {
+//   const deck = document.getElementById('deck');
+//   const cardElements = deck.getElementsByClassName('card');
+//   for (let i = 0; i < cardElements.length; i++) {
+//     //const cardElement = cardElements[i];
+//     //const card: Card = {};
+//     //cardElement.addEventListener('click', () => flipCard(card));
+//     //cards.push(card);
+//   }
+// };
+
+// initCards();
 
 export default function HomePage() {
   return (
@@ -40,8 +71,11 @@ export default function HomePage() {
         <section id="speakers">
           <SpeakersSection/>
         </section>
+        <section id="tracks">
+          <Tracks />
+        </section>
         <section id="schedule">
-
+          <Schedule />
         </section>
         <section id="faqs">
 

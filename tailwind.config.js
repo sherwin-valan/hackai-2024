@@ -34,9 +34,44 @@ module.exports = {
     },
     fontFamily: {
       sans: ['IBM Plex Sans', 'sans-serif'],
+      sans: ['CooperHewitt', 'sans-serif'],
       cairo: ['Cairo', 'sans-serif'],
       hind: ['Hind Siliguri'],
-      lucidity: ['Lucidity']
+      lucidity: ['Lucidity'],
+    },
+    css: {
+      container: {
+        'display': 'flex',
+      },
+      card: {
+        'position': 'relative',
+        'width': '200px',
+        'height': '300px',
+        'margin': '10px',
+        'perspective': '1000px',
+        front: {
+          'position': 'absolute',
+          'width': '100%',
+          'height': '100%',
+          'backface-visibility': 'hidden',
+        },
+        back: {
+          'position': 'absolute',
+          'width': '100%',
+          'height': '100%',
+          'backface-visibility': 'hidden',
+        },
+        front: {
+          //'transform': 'rotateX(0deg)',
+        },
+        back: {
+          //'transform': 'rotateX(0deg)',
+          'filter': 'invert(100%)',
+        },
+        flip: {
+          //'transform': 'rotateX(0deg)',
+        }
+      },
     },
   },
   variants: {
