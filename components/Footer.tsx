@@ -32,7 +32,7 @@ function FooterSection()
                         </Typography>
                     </button>
                     <div className='flex flex-row items-center justify-between'>
-                        <EmailOutlinedIcon></EmailOutlinedIcon>
+                        <button onClick={() => location.href="mailto:account@aisociety.io"}><EmailOutlinedIcon></EmailOutlinedIcon></button>
                         <button onClick={() => window.open("https://www.instagram.com/utdais/", "_blank")}><img src='/instagram.svg'/></button>
                         <button onClick={() => window.open("https://www.youtube.com/@artificialintelligencesoci9846", "_blank")}><img src='/youtube.svg'/></button>
                         <button onClick={() => window.open("https://www.linkedin.com/company/ais-utd/", "_blank")}><img src='/linkedin.svg'/></button>

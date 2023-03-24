@@ -14,11 +14,9 @@ function WorkWithUsSection()
         <div className="mx-auto py-14 sm:px-8 md:px-32 lg:px-44 text-white">
             
             <div className="mb-2 mr-14">
-                <Typography fontFamily={"var(--lucidity)"} className="mb-2 md:mb-4 text-xl md:text-4xl font-bold">WORK WITH US</Typography>
+                <Typography fontFamily={"var(--lucidity)"} className="text-4xl font-bold">WORK WITH US</Typography>
             </div>
             <div className='flex flex-row items-center justify-between'>
-            
- 
                 <Box
                     sx={{
                         width: 500,
@@ -41,7 +39,7 @@ function WorkWithUsSection()
                         border={3}
                         borderRadius={10}
                     >
-                        <Typography fontFamily={"var(--cooper)"} className='ml-11' fontSize={20} color="#B93648">
+                        <Typography flexGrow={1} textAlign="center" fontFamily={"var(--cooper)"} fontSize={20} color="#B93648">
                             Students
                         </Typography>
                     </Box>
@@ -87,7 +85,7 @@ function WorkWithUsSection()
                         border={3}
                         borderRadius={10}
                     >
-                        <Typography fontFamily={"var(--cooper)"} className='ml-8' fontSize={20} color="#B93648">
+                        <Typography fontFamily={"var(--cooper)"} flexGrow={1} textAlign="center" fontSize={20} color="#B93648">
                             Companies
                         </Typography>
                     </Box>
