@@ -4,6 +4,8 @@ import { useInView } from "framer-motion";
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import CrisisAlertIcon from '@mui/icons-material/CrisisAlert';
 import PsychologyAltIcon from '@mui/icons-material/PsychologyAlt';
+import {Typography } from '@mui/material';
+import "@fontsource/hind-siliguri";
 
 function AboutSection()
 {
@@ -14,7 +16,7 @@ function AboutSection()
         <div className="mx-auto py-14 sm:px-8 md:px-32 lg:px-44 text-white font-lucidity">
             <div className="block md:flex">
                 <div className="mb-6 md:mb-2 md:mr-14">
-                    <div className="text-center md:text-left mb-2 md:mb-4 text-3xl md:text-4xl font-bold">ABOUT</div>
+                    <Typography fontFamily={"var(--lucidity)"} className="text-center md:text-left mb-2 md:mb-4 text-3xl md:text-4xl font-bold">ABOUT</Typography>
                 </div>
                 <div 
                     ref={ref}
@@ -30,9 +32,10 @@ function AboutSection()
                     >
                         <div className="text-xl md:text-2xl font-bold flex justify-center items-center md:justify-start md:items-start">
                             <PsychologyAltIcon className="" fontSize="large"/>
-                            <div className='text-2xl md:text-3xl ml-2 mb-2'> What is HackAI</div>
+                            <Typography fontFamily={"var(--cooper)"} className="text-2xl md:text-3xl ml-2 mb-2">What is HackAI</Typography>
+
                         </div>
-                        <div className="text-lg">
+                        <div className="text-lg font-hind">
                         Student-run hackathon organized by the Artificial Intelligence Society at UTD, aiming to connect today's students with the knowledge and resources needed to build Artificial Intelligence related projects in the span of 24 hours.
                         </div>
                     </div>
@@ -46,9 +49,9 @@ function AboutSection()
                     >
                         <div className="text-xl md:text-2xl font-bold flex justify-center items-center md:justify-start md:items-start">
                             <CrisisAlertIcon className="" fontSize="large"/>
-                            <div className='text-2xl md:text-3xl ml-2 mb-2'> Our Mission </div>
+                            <Typography fontFamily={"var(--cooper)"} className="text-2xl md:text-3xl ml-2 mb-2">Our Mission</Typography>
                         </div>
-                        <div className="text-lg">
+                        <div className="text-lg font-hind">
                         We hope to demystify this specialized niche in computer science and bring it forward to students through an AI-related hackathon. We aim for our in-person event to provide both learning and competition opportunities and connect them to professionals who can further guide them in their AI journey.
                         </div>
                     </div>
@@ -62,13 +65,13 @@ function AboutSection()
                     >
                         <div className="text-xl md:text-2xl font-bold flex justify-center items-center md:justify-start md:items-start">
                             <HandshakeIcon className="" fontSize="large"/>
-                            <div className='text-2xl md:text-3xl ml-2 mb-2'> Why HackAI </div>
+                            <Typography fontFamily={"var(--cooper)"} className="text-2xl md:text-3xl ml-2 mb-2">Why HackAI </Typography>
                         </div>
-                        <div className="text-lg">
+                        <div className="text-lg font-hind">
                         Sponsoring HackAI is a win-win opportunity. Your contribution can help participants complete company challenges while giving your company access to top tech talent, advertising opportunities, branding recognition, tech talk presentation time, product showcase, and even potential business challenge solutions.
                         </div>
                     </div>
-                    <img className="mt-10 w-full md:w-9/12" src="/chip.png" alt="about hackai chips"/>
+                    <img className="text-center mx-auto mt-10 w-full md:w-9/12" src="/chip.png" alt="about hackai chips"/>
                 </div> 
             </div>
         </div>
