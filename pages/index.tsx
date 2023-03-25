@@ -170,7 +170,7 @@ export default function HomePage() {
             Register Now
           </button>
         </section>
-        <section id="about">
+        <section style={{marginTop: "350px"}} id="about">
           <AboutSection/>
         </section>
         <section id="speakers">
