@@ -28,6 +28,9 @@ module.exports = {
       backgroundSize: {
         fill:'100% 100%',
         'extra-fill':'150% 150%'
+      },
+      screens: {
+        'med':'832px'
       }
     },
     fontFamily: {
