@@ -8,6 +8,7 @@ import Tracks from './Tracks';
 import Schedule from './Schedule';
 import { Typography, Button, Menu, MenuItem } from '@mui/material';
 import AppbarBG from '../components/appbar-bg';
+import FAQs from './FAQs';
 
 // interface Card {
 //   element: HTMLElement;
@@ -182,8 +183,8 @@ export default function HomePage() {
         <section id="schedule">
           <Schedule />
         </section>
-        <section id="faqs">
-
+        <section style={{marginTop: '3rem'}} id="faqs">
+          <FAQs />
         </section>
         <section id="sponsors">
 
