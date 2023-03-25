@@ -6,13 +6,13 @@ function Schedule()
 {
     return (
         <>
-        <head className='flex justify-center items-center h-center'>
+        <div className='flex justify-center items-center h-center'>
             <div className="font-sans-CooperHewitt text-4xl text-center p-20">
                 <Typography fontFamily={"var(--lucidity)"} className="text-xl md:text-4xl font-bold">
                     SCHEDULE
                 </Typography>
             </div>
-        </head>
+        </div>
         <div className='justify-center h-center flex pr-10'>
             <img className='justify-center h-center flex pr-40' src='schedule.png'></img>
             <Typography fontFamily={"var(--lucidity)"} className='pt-40'>
