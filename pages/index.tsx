@@ -1,11 +1,11 @@
 import Head from 'next/head';
 import * as React from 'react';
-import AboutSection from '../components/AboutSection';
-import FooterSection from '../components/Footer';
-import SpeakersSection from '../components/SpeakersSection';
-import WorkWithUsSection from '../components/WorkwithUs';
-import Tracks from '../components/Tracks';
-import Schedule from '../components/Schedule';
+import AboutSection from './AboutSection';
+import FooterSection from './Footer';
+import SpeakersSection from './SpeakersSection';
+import WorkWithUsSection from './WorkwithUs';
+import Tracks from './Tracks';
+import Schedule from './Schedule';
 
 // interface Card {
 //   element: HTMLElement;
