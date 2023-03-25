@@ -42,12 +42,12 @@ function Tracks() {
     <>
     {/* header */}
     <div className="h-center">
-     <head className='flex justify-center items-center h-center'>
+     <div className='flex justify-center items-center h-center'>
          <img src="slot_machine.png" className="transform scale-50"/>
          <div className="font-sans-CooperHewitt text-4xl text-center">
          <Typography fontFamily={"var(--lucidity)"} className="text-xl md:text-4xl font-bold">TRACKS</Typography>
          </div>
-     </head>
+     </div>
     <div className='flex justify-center items-center'>
         <motion.div
             className="card"
