@@ -7,6 +7,7 @@ import WorkWithUsSection from './WorkwithUs';
 import Tracks from './Tracks';
 import Schedule from './Schedule';
 import { Typography, Button, Menu, MenuItem } from '@mui/material';
+import AppbarBG from '../components/appbar-bg';
 
 // interface Card {
 //   element: HTMLElement;
