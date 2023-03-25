@@ -1,11 +1,7 @@
 module.exports = {
-  content: ['./pages/**/*.{js,ts,jsx,tsx}'],
+  content: ["./Components/**/*.{js,ts,jsx,tsx}", './pages/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      width: {
-      },
-      height: {
-      },
       colors: {
         ais: {
           black: '#1F1E1E',
@@ -21,10 +17,6 @@ module.exports = {
           gray: '#B8B8B8',
         },
       },
-      scale: {
-      },
-      margin: {
-      },
       backgroundSize: {
         fill:'100% 100%',
         'extra-fill':'150% 150%'
@@ -32,14 +24,6 @@ module.exports = {
       screens: {
         'med':'832px'
       }
-    },
-    fontFamily: {
-      sans: ['IBM Plex Sans', 'sans-serif'],
-      sans: ['CooperHewitt', 'sans-serif'],
-      cairo: ['Cairo', 'sans-serif'],
-      hind: ['Hind Siliguri'],
-      lucidity: ['Lucidity', 'sans-serif'],
-      oriya: ['Noto Sans Oriya UI', 'sans-serif']
     },
     css: {
       container: {
