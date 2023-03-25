@@ -109,7 +109,7 @@ function WorkWithUsSection()
             </div>
             <div className=' mt-10 flex flex-col items-center justify-center'>
                 <Typography color={"white"} fontFamily={"var(--lucidity)"} fontSize={75}>JOIN HACKAI'23!</Typography>
-                <Button className='bg-white rounded-lg w-[170px] text-[#1A2025] hover:scale-125 hover:bg-white hover:text=[#1A2025]'>
+                <Button onClick={() => window.open("https://coda.io/form/HackAI-2022_d4OphGKMDDl", "_blank")} className='bg-white rounded-lg w-[170px] text-[#1A2025] hover:scale-125 hover:bg-white hover:text=[#1A2025]'>
                     <Typography fontFamily={"var(--lucidity)"}>
                         REGISTER NOW!
                     </Typography>

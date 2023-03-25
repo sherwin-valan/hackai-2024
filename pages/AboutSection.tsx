@@ -36,7 +36,7 @@ function AboutSection()
 
                         </div>
                         <div className="text-lg font-hind">
-                        Student-run hackathon organized by the Artificial Intelligence Society at UTD, aiming to connect today's students with the knowledge and resources needed to build Artificial Intelligence related projects in the span of 24 hours.
+                            Student-run hackathon organized by the Artificial Intelligence Society at UTD, aiming to connect today's students with the knowledge and resources needed to build Artificial Intelligence related projects in the span of 24 hours.
                         </div>
                     </div>
                     <div 
