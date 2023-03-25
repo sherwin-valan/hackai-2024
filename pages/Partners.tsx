@@ -8,8 +8,8 @@ const sponsersLogos= [["jp_morgan.svg", "geico.svg"],
 const sponsersPath = sponsersLogos.map((row) => row.map((path) => sponserDir + '/' + path))
 
 const fontSize =  {
-    title: "4rem",
-    subHeading: "1.5rem",
+    title: "3rem",
+    subHeading: "1.2rem",
 }
 
 function displaySponsers() {

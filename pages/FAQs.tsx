@@ -30,10 +30,10 @@ const questions = [
 ]
 
 const fontSizes = {
-    title: "5rem",
-    heading: "2rem",
-    headingCard: "2rem",
-    bodyCard: "1.3rem",
+    title: "3rem",
+    heading: "1.2rem",
+    headingCard: "1.2rem",
+    bodyCard: "1rem",
 }
 
 function displayListOfQuestions() {
