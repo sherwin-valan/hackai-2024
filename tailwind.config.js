@@ -3,10 +3,8 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        '128': '460px',
       },
       height: {
-        '128': '400px',
       },
       colors: {
         ais: {
@@ -24,20 +22,24 @@ module.exports = {
         },
       },
       scale: {
-        85: '0.85',
-        300: '3',
-        400: '4',
       },
       margin: {
-        73: '18.75rem',
       },
+      backgroundSize: {
+        fill:'100% 100%',
+        'extra-fill':'150% 150%'
+      },
+      screens: {
+        'med':'832px'
+      }
     },
     fontFamily: {
       sans: ['IBM Plex Sans', 'sans-serif'],
       sans: ['CooperHewitt', 'sans-serif'],
       cairo: ['Cairo', 'sans-serif'],
       hind: ['Hind Siliguri'],
-      lucidity: ['Lucidity'],
+      lucidity: ['Lucidity', 'sans-serif'],
+      oriya: ['Noto Sans Oriya UI', 'sans-serif']
     },
     css: {
       container: {

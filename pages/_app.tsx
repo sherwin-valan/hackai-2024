@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import 'tailwindcss/tailwind.css';
-import localFont from "@next/font/local";
+import localFont from '@next/font/local';
 
 /**
  * A wrapper for the root website component.
@@ -23,6 +23,13 @@ const cooper = localFont({
   ]
 })
 
+const campground = localFont({
+  src: [
+    {
+      path: "../public/fonts/Campground.otf",
+    }
+  ]
+})
 export default function MyApp({ Component, pageProps }: AppProps) {
   
   return (
@@ -38,6 +45,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           /* ... */
           --lucidity: ${lucidity.style.fontFamily};
           --cooper: ${cooper.style.fontFamily};
+          --campground: ${campground.style.fontFamily}
         }
       `}</style>
       <Component {...pageProps} />
