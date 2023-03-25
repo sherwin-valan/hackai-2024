@@ -30,7 +30,6 @@ const campground = localFont({
     }
   ]
 })
-
 export default function MyApp({ Component, pageProps }: AppProps) {
   
   return (

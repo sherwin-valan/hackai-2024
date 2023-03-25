@@ -26,6 +26,7 @@
     "@types/react-dom": "18.0.9",
     "calendar-link": "^2.4.0",
     "coda-js": "^4.0.1",
+    "cssnano": "^5.1.15",
     "eslint-config-next": "^13.2.4",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",

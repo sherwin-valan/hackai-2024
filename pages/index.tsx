@@ -1,7 +1,41 @@
 import Head from 'next/head';
 import * as React from 'react';
-import AppbarBG from '../components/appbar-bg';
+import AboutSection from './AboutSection';
+import FooterSection from './Footer';
+import SpeakersSection from './SpeakersSection';
+import WorkWithUsSection from './WorkwithUs';
+import Tracks from './Tracks';
+import Schedule from './Schedule';
 import { Typography, Button, Menu, MenuItem } from '@mui/material';
+
+// interface Card {
+//   element: HTMLElement;
+//   flipped: boolean;
+// }
+
+// const cards: Card[] = [];
+
+// const flipCard = (card: Card) => {
+//   if (card.flipped) {
+//     card.element.classList.remove('card-flip');
+//   } else {
+//     card.element.classList.add('card-flip');
+//   }
+//   card.flipped = !card.flipped;
+// };
+
+// const initCards = () => {
+//   const deck = document.getElementById('deck');
+//   const cardElements = deck.getElementsByClassName('card');
+//   for (let i = 0; i < cardElements.length; i++) {
+//     //const cardElement = cardElements[i];
+//     //const card: Card = {};
+//     //cardElement.addEventListener('click', () => flipCard(card));
+//     //cards.push(card);
+//   }
+// };
+
+// initCards();
 
 export default function HomePage() {
   {/*for the appbar*/}
@@ -135,11 +169,17 @@ export default function HomePage() {
             Register Now
           </button>
         </section>
-        <section id="about" className="h-[100vh]">  
-          Next section here.
+        <section id="about">
+          <AboutSection/>
+        </section>
+        <section id="speakers">
+          <SpeakersSection/>
+        </section>
+        <section id="tracks">
+          <Tracks />
         </section>
         <section id="schedule">
-
+          <Schedule />
         </section>
         <section id="faqs">
 
@@ -147,8 +187,16 @@ export default function HomePage() {
         <section id="sponsors">
 
         </section>
+        <section id="work with us">
+          <WorkWithUsSection/>
+        </section>
+        <div className="relative">
+          <img className='absolute top-0 left-0 z-1 h-[146px]' src='/Rectangle 107.svg'/>
+          <img src='/Rectangle 108.svg'/>
+        </div>
+        
         <section id="footer">
-
+          <FooterSection/>
         </section>
       </main>
     </>
