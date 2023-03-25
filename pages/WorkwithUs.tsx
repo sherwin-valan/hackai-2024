@@ -54,10 +54,10 @@ function WorkWithUsSection()
                             </Typography>
                         </div>
                         <div className='flex mt-10 flex-row items-center justify-evenly'>
-                            <Button className='bg-[#FEF9EE] w-[140px] text-[#B93648] hover:bg-[#B93648] hover:text-[#FEF9EE]' variant="contained">
+                            <Button onClick={() => {window.open("https://coda.io/form/Volunteer-Mentor-Form_dBCSFvzl4RV", "_none")}} className='bg-[#FEF9EE] w-[140px] text-[#B93648] hover:bg-[#B93648] hover:text-[#FEF9EE]' variant="contained">
                                 <Typography fontFamily={"var(--cooper)"} textTransform={"none"}>Volunteer</Typography>
                             </Button>
-                            <Button className='bg-[#FEF9EE] w-[140px] text-[#B93648] hover:bg-[#B93648] hover:text-[#FEF9EE]' variant="contained">
+                            <Button onClick={() => {window.open("https://coda.io/form/Volunteer-Mentor-Form_dBCSFvzl4RV", "_none")}} className='bg-[#FEF9EE] w-[140px] text-[#B93648] hover:bg-[#B93648] hover:text-[#FEF9EE]' variant="contained">
                                 <Typography fontFamily={"var(--cooper)"} textTransform={"none"}>Mentor</Typography>
                             </Button>
                         </div>
