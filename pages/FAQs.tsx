@@ -61,8 +61,7 @@ function displayListOfQuestions() {
 }
 
 
-function FAQs() 
-{
+function FAQs() {
     return (
         <Box sx={{padding: "5rem"}}>
             <Box>

@@ -9,6 +9,7 @@ import Schedule from './Schedule';
 import { Typography, Button, Menu, MenuItem } from '@mui/material';
 import AppbarBG from '../components/appbar-bg';
 import FAQs from './FAQs';
+import Partners from './Partners';
 
 // interface Card {
 //   element: HTMLElement;
@@ -183,20 +184,21 @@ export default function HomePage() {
         <section id="schedule">
           <Schedule />
         </section>
-        <section style={{marginTop: '3rem'}} id="faqs">
+        <section id="faqs" style={{marginTop: '3rem'}}>
           <FAQs />
         </section>
-        <section id="sponsors">
-
+        <section style={{backgroundColor: '#FEF9EE'}} id="sponsors">
+          <img width="100%" src="top-red-triangles.svg" style={{marginTop: '-1px'}} />
+          <Partners />
+          <img width="100%" src="bottom-red-triangles.svg" />
         </section>
         <section id="work with us">
           <WorkWithUsSection/>
         </section>
         <div className="relative">
           <img className='absolute top-0 left-0 z-1 h-[146px]' src='/Rectangle 107.svg'/>
-          <img src='/Rectangle 108.svg'/>
+          <img  src='/Rectangle 108.svg'/>
         </div>
-        
         <section id="footer">
           <FooterSection/>
         </section>
