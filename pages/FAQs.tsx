@@ -15,12 +15,12 @@ const questions = [
     {
         icons: "faq-icons/person.svg",
         heading: "Who can attend?",
-        body: <p>You must be at least <b>18 years</b> of age. Non-STEM majors, first-time hackers, and beginner coders are <b>welcomed</b> and encouraged to join us! This hackathon is meant to introduce AI to everyone. All you need is a drive and passion to learn!</p>
+        body: <>You must be at least <b>18 years</b> of age. Non-STEM majors, first-time hackers, and beginner coders are <b>welcomed</b> and encouraged to join us! This hackathon is meant to introduce AI to everyone. All you need is a drive and passion to learn!</>
     },
     {
         icons: "faq-icons/wallet.svg",
         heading: "How much does it cost?",
-        body: <p>There's food, awesome workshops, and super cool swag that are completely <b>FREE</b>!</p>
+        body: <>There's food, awesome workshops, and super cool swag that are completely <b>FREE</b>!</>
     },
     {
         icons: "faq-icons/computer.svg",
@@ -89,7 +89,7 @@ function FAQs() {
                 }}>
                     {displayListOfQuestions()}
                     <Box margin="-5rem" width={'40%'}>
-                        <img src="FAQs_cards_pic.svg" />
+                        <img src="FAQs_cards_pic.svg"/>
                     </Box>
                 </Paper>
             </Box>
