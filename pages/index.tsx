@@ -73,7 +73,7 @@ export default function HomePage() {
         <section id="landing" className="relative w-[100vw] h-[100vh] z-0">
           <Landing/>
         </section>
-        <section id="about" className="relative z-10 mt-[min(25vh,25vw)]">
+        <section id="about" className="relative z-0 mt-[min(25vh,25vw)]">
           <AboutSection/>
         </section>
         <section id="speakers">
