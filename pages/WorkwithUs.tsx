@@ -11,12 +11,11 @@ function WorkWithUsSection()
     const isInView = useInView(ref, { once: true });
 
     return (
-        <div className="mx-auto py-14 sm:px-8 md:px-32 lg:px-44 text-white">
-            
-            <div className="mb-2 mr-14">
+        <div className="py-14 text-white">
+            <div className="mb-2 mr-14 flex flex-row justify-center">
                 <Typography fontFamily={"var(--lucidity)"} className="text-4xl font-bold">WORK WITH US</Typography>
             </div>
-            <div className='flex flex-row items-center justify-between'>
+            <div className='flex flex-row items-center justify-evenly'>
                 <Box
                     sx={{
                         width: 500,
