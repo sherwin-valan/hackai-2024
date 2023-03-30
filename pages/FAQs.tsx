@@ -5,12 +5,12 @@ const questions = [
     {
         icons: "faq-icons/robot.svg",
         heading: "What is hackathon?",
-        body: "A 24-hour tech event for teams of students to learn new skills, build cool tech projects, and meet tons of other students and tech professionals."
+        body: <>A 24-hour tech event for teams of students to learn new skills, build cool tech projects, and meet tons of other students and tech professionals.</>
     },
     {
         icons: "faq-icons/handhshake.svg",
         heading: "Do I need to have a team?",
-        body: "Although you can work in up to a team of four, you do not have to have a team. We will have team matching activities if you would like a team."
+        body: <>There is no strict requirement to have a team. However, even if a team is desired, you can work with a team of two to four people. We will also have team matching activities if you would like a team. </>
     },
     {
         icons: "faq-icons/person.svg",
@@ -18,14 +18,14 @@ const questions = [
         body: <>You must be at least <b>18 years</b> of age. Non-STEM majors, first-time hackers, and beginner coders are <b>welcomed</b> and encouraged to join us! This hackathon is meant to introduce AI to everyone. All you need is a drive and passion to learn!</>
     },
     {
+        icons: "faq-icons/computer.svg",
+        heading: "What projects should I expect?",
+        body: <>Topics such as Natural Language Processing, Machine Learning, Data Analytics, and more will be represented amongst these projects, and we are confident that both the creativity and quality of the submissions will be incredibly high</>
+    },
+    {
         icons: "faq-icons/wallet.svg",
         heading: "How much does it cost?",
         body: <>There's food, awesome workshops, and super cool swag that are completely <b>FREE</b>!</>
-    },
-    {
-        icons: "faq-icons/computer.svg",
-        heading: "What projects should I expect?",
-        body: "Topics such as Natural Language Processing, Machine Learning, Data Analytics, and more will be represented amongst these projects, and we are confident that both the creativity and quality of the submissions will be incredibly high."
     },
 ]
 
@@ -88,7 +88,7 @@ function FAQs() {
                     backgroundColor: "#FEF9EE",
                 }}>
                     {displayListOfQuestions()}
-                    <Box margin="-5rem" width={'40%'}>
+                    <Box margin="-5rem" marginTop="0rem" width={'40%'}>
                         <img src="FAQs_cards_pic.svg"/>
                     </Box>
                 </Paper>
