@@ -59,13 +59,13 @@ function Tracks() {
         {!isHovered1 ? (
             <div className='front'>
                 <div className="justify-center h-center flex">
-                    <img src="track_spade.png" className="flex text-center px-[1rem]" alt="track1"/>
+                    <img src="card_f_athletes.png" className="flex text-center px-[1rem]" alt="track1"/>
                 </div>
             </div>
         ) :(
             <div className="back">
                 <div className="justify-center h-center flex">
-                    <img src="blank_card.png" className="flex text-center px-[1rem] flip" alt="track1"/>
+                    <img src="card_b_athletes.png" className="flex text-center px-[1rem] flip" alt="track1"/>
                 </div>
             </div>
         )}
@@ -80,13 +80,13 @@ function Tracks() {
         {!isHovered2 ? (
             <div className='front'>
                 <div className="justify-center h-center flex">
-                    <img src="track_diamond.png" className="flex text-center px-[1rem]" alt="track2"/>
+                    <img src="card_f_brainiacs.png" className="flex text-center px-[1rem]" alt="track2"/>
                 </div>
             </div>
         ) :(
             <div className="back">
                 <div className="justify-center h-center flex">
-                    <img src="blank_card.png" className="flex text-center px-[1rem]" alt="track2"/>
+                    <img src="card_b_brainiacs.png" className="flex text-center px-[1rem]" alt="track2"/>
                 </div>
             </div>
         )}
@@ -101,13 +101,13 @@ function Tracks() {
         {!isHovered3 ? (
             <div className='front'>
                 <div className="justify-center h-center flex">
-                    <img src="track_club.png" className="flex text-center px-[1rem]" alt="track3"/>
+                    <img src="card_f_saints.png" className="flex text-center px-[1rem]" alt="track3"/>
                 </div>
             </div>
         ) :(
             <div className="back">
                 <div className="justify-center h-center flex">
-                    <img src="blank_card.png" className="flex text-center px-[1rem] flip" alt="track3"/>
+                    <img src="card_b_saints.png" className="flex text-center px-[1rem] flip" alt="track3"/>
                 </div>
             </div>
         )}
@@ -122,13 +122,13 @@ function Tracks() {
         {!isHovered4 ? (
             <div className='front'>
                 <div className="justify-center h-center flex">
-                    <img src="track_heart.png" className="flex text-center px-[1rem]" alt="track4"/>
+                    <img src="card_f_creatives.png" className="flex text-center px-[1rem]" alt="track4"/>
                 </div>
             </div>
         ) :(
             <div className="back">
                 <div className="justify-center h-center flex">
-                    <img src="blank_card.png" className="flex text-center px-[1rem]" alt="track4"/>
+                    <img src="card_b_creatives.png" className="flex text-center px-[1rem]" alt="track4"/>
                 </div>
             </div>
         )}

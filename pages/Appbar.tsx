@@ -19,7 +19,7 @@ export default function Landing() {
 
   return (
     <>
-      <AppbarBG transparencyThreshold="0.2"/>
+      <AppbarBG transparencyThreshold="0.1" className="z-10"/>
       <nav className="bg-transparent w-[100vw] h-[5rem] grid grid-cols-2 md:grid-cols-3 place-items-center">
         <div onClick={() => {handleItemClick('landing')}} className="flex gap-4 items-center [cursor:pointer]">
           <img src="hackai-logo.png" className="h-[3rem] object-contain"/>
@@ -29,7 +29,7 @@ export default function Landing() {
           <div onClick={() => {handleItemClick('about')}} className="[cursor:pointer]">About</div>
           <div onClick={() => {handleItemClick('schedule')}} className="[cursor:pointer]">Schedule</div>
           <div onClick={() => {handleItemClick('faqs')}} className="[cursor:pointer]">Faqs</div>
-          <div onClick={() => {handleItemClick('sponsors')}} className="[cursor:pointer]">Sponsors</div>
+          <div onClick={() => {handleItemClick('partners')}} className="[cursor:pointer]">Partners</div>
         </div>
         <div className="flex md:hidden">
           <Button
@@ -53,7 +53,7 @@ export default function Landing() {
             <MenuItem onClick={() => {handleItemClick('about')}}>About</MenuItem>
             <MenuItem onClick={() => {handleItemClick('schedule')}}>Schedule</MenuItem>
             <MenuItem onClick={() => {handleItemClick('faqs')}}>Faqs</MenuItem>
-            <MenuItem onClick={() => {handleItemClick('sponsors')}}>Sponsors</MenuItem>
+            <MenuItem onClick={() => {handleItemClick('partners')}}>Partners</MenuItem>
           </Menu>
         </div>
         <div className="hidden lg:flex gap-4">
