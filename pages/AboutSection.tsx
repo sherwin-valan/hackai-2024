@@ -13,7 +13,8 @@ function AboutSection()
     const isInView = useInView(ref, { once: true });
 
     return (
-        <div className="mx-auto py-14 sm:px-8 md:px-32 lg:px-44 text-white font-lucidity">
+        <>
+        <div className="mx-auto py-14 sm:px-8 md:px-32 lg:px-44 text-white font-lucidity z-0">
             <div className="block md:flex">
                 <div className="mb-6 md:mb-2 md:mr-14">
                     <Typography fontFamily={"var(--lucidity)"} className="text-center md:text-left mb-2 md:mb-4 text-3xl md:text-4xl font-bold">ABOUT</Typography>
@@ -71,10 +72,14 @@ function AboutSection()
                         Sponsoring HackAI is a win-win opportunity. Your contribution can help participants complete company challenges while giving your company access to top tech talent, advertising opportunities, branding recognition, tech talk presentation time, product showcase, and even potential business challenge solutions.
                         </div>
                     </div>
-                    <img className="text-center mx-auto mt-10 w-full md:w-9/12" src="/chip.png" alt="about hackai chips"/>
                 </div> 
             </div>
+        <div className='relative z-0'>
+            <img className="text-center mx-auto mt-10 w-full md:w-9/12 z-0" src="/chip.png" alt="about hackai chips"/>
         </div>
+        </div>
+        
+        </>
     )
 }
 
