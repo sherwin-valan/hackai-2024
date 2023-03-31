@@ -32,8 +32,8 @@ module.exports = {
       },
       card: {
         'position': 'relative',
-        'width': '200px',
-        'height': '300px',
+        'width': '282px',
+        'height': '426.08px',
         'margin': '10px',
         'perspective': '1000px',
         front: {
@@ -53,7 +53,7 @@ module.exports = {
         },
         back: {
           //'transform': 'rotateX(0deg)',
-          'filter': 'invert(100%)',
+          //'filter': 'invert(100%)',
         },
         flip: {
           //'transform': 'rotateX(0deg)',
