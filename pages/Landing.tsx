@@ -50,7 +50,7 @@ export default function Landing() {
             {' '}Presents
           </Typography>
         </div>
-        <p className="text-[#940E21] font-[1000] 
+        <p className="text-[#940E21] font-[2000] 
           text-[calc(min(10vh,10vw))]
           sm:text-[calc(min(9vh,9vw))]
           med:text-[calc(min(8vh,8vw))]
