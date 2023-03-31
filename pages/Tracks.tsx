@@ -49,34 +49,37 @@ function Tracks() {
          </div>
      </div>
     <div className='flex justify-center items-center'>
-        <motion.div
-            className="card"
-            onMouseEnter={flip1}
-            animate={{ rotateY: isHovered1 ? 180 : 0 }}
-            transition={{ duration: 1.5 }}
+        <motion.div className='card'
             onHoverStart={() => setHovered1(true)}
             onHoverEnd={() => setHovered1(false)}>
-        {!isHovered1 ? (
-            <div className='front'>
-                <div className="justify-center h-center flex">
-                    <img src="card_f_athletes.png" className="flex text-center px-[1rem]" alt="track1"/>
+            <motion.div
+                className="card"
+                onMouseEnter={flip1}
+                animate={{ rotateY: isHovered1 ? 180 : 0 }}
+                transition={{ duration: 1.5 }}>
+            {!isHovered1 ? (
+                <div className='front'>
+                    <div className="justify-center h-center flex">
+                        <img src="card_f_athletes.png" className="flex text-center px-[1rem]" alt="track1"/>
+                    </div>
                 </div>
-            </div>
-        ) :(
-            <div className="">
-                <div className="justify-center h-center flex">
-                    <img src="card_b_athletes.png" className="flex text-center px-[1rem]" alt="track1"/>
+            ) :(
+                <div className="">
+                    <div className="justify-center h-center flex">
+                        <img src="card_b_athletes.png" className="flex text-center px-[1rem]" alt="track1"/>
+                    </div>
                 </div>
-            </div>
-        )}
+            )}
+            </motion.div>
         </motion.div>
+        <motion.div className='card'
+            onHoverStart={() => setHovered2(true)}
+            onHoverEnd={() => setHovered2(false)}>
         <motion.div
         className="card"
         onMouseEnter={flip2}
         animate={{ rotateY: isHovered2 ? 180 : 0 }}
-        transition={{ duration: 1.5 }}
-        onHoverStart={() => setHovered2(true)}
-        onHoverEnd={() => setHovered2(false)}>
+        transition={{ duration: 1.5 }}>
         {!isHovered2 ? (
             <div className='front'>
                 <div className="justify-center h-center flex">
@@ -91,13 +94,15 @@ function Tracks() {
             </div>
         )}
         </motion.div>
+        </motion.div>
+        <motion.div className='card'
+            onHoverStart={() => setHovered3(true)}
+            onHoverEnd={() => setHovered3(false)}>
         <motion.div
         className="card"
         onMouseEnter={flip3}
         animate={{ rotateY: isHovered3 ? 180 : 0 }}
-        transition={{ duration: 1.5 }}
-        onHoverStart={() => setHovered3(true)}
-        onHoverEnd={() => setHovered3(false)}>
+        transition={{ duration: 1.5 }}>
         {!isHovered3 ? (
             <div className='front'>
                 <div className="justify-center h-center flex">
@@ -112,13 +117,15 @@ function Tracks() {
             </div>
         )}
         </motion.div>
+        </motion.div>
+        <motion.div className='card'
+            onHoverStart={() => setHovered4(true)}
+            onHoverEnd={() => setHovered4(false)}>
         <motion.div
             className="card"
             onMouseEnter={flip4}
             animate={{ rotateY: isHovered4 ? 180 : 0 }}
-            transition={{ duration: 1.5 }}
-            onHoverStart={() => setHovered4(true)}
-            onHoverEnd={() => setHovered4(false)}>
+            transition={{ duration: 1.5 }}>
         {!isHovered4 ? (
             <div className='front'>
                 <div className="justify-center h-center flex">
@@ -132,6 +139,7 @@ function Tracks() {
                 </div>
             </div>
         )}
+        </motion.div>
         </motion.div>
     </div>
     </div>
