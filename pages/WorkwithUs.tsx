@@ -11,12 +11,11 @@ function WorkWithUsSection()
     const isInView = useInView(ref, { once: true });
 
     return (
-        <div className="mx-auto py-14 sm:px-8 md:px-32 lg:px-44 text-white">
-            
-            <div className="mb-2 mr-14">
+        <div className="py-14 text-white">
+            <div className="mb-2 mr-14 flex flex-row justify-center">
                 <Typography fontFamily={"var(--lucidity)"} className="text-4xl font-bold">WORK WITH US</Typography>
             </div>
-            <div className='flex flex-row items-center justify-between'>
+            <div className='flex flex-row items-center justify-evenly'>
                 <Box
                     sx={{
                         width: 500,
@@ -100,7 +99,7 @@ function WorkWithUsSection()
                             </Typography>
                         </div>
                         <div className='flex mt-16 flex-row items-center justify-center pt-6'>
-                            <Button className='bg-[#FEF9EE] w-[170px] text-[#B93648] hover:bg-[#B93648] hover:text-[#FEF9EE]' variant="contained">
+                            <Button onClick={() => location.href="mailto:contact@aisociety.io"} className='bg-[#FEF9EE] w-[170px] text-[#B93648] hover:bg-[#B93648] hover:text-[#FEF9EE]' variant="contained">
                                 <Typography fontFamily={"var(--cooper)"} textTransform={"none"}>Sponsor Packet</Typography>
                             </Button>
                         </div>

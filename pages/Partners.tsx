@@ -3,8 +3,9 @@ import "@fontsource/hind-siliguri";
 
 const sponserDir = "sponsers"
 const sponsersLogos= [["jp_morgan.svg", "geico.svg"], 
-                      ["Blackstone.svg", "Jasper.svg", "TT.svg"], 
-                      ["RISE1.png", "JSOM.svg",  "CAIML.svg"]]
+                      [, "Jasper.svg", "TT.svg"], 
+                      ["RISE1.png", "JSOM.svg",  "CAIML.svg"],
+                      ["Blackstone.png"]]
 const sponsersPath = sponsersLogos.map((row) => row.map((path) => sponserDir + '/' + path))
 
 const fontSize =  {
@@ -20,7 +21,8 @@ function displaySponsers() {
                     display: "flex",
                     flexDirection: "row",
                     justifyContent: "space-evenly",
-                    alignItems: "center"
+                    alignItems: "center",
+                    pt:2
                 }}>
                     {row.map((path, key) => 
                         <img key={key} src={path} />
