@@ -96,10 +96,6 @@ export default function HomePage() {
         <section id="work with us">
           <WorkWithUsSection/>
         </section>
-        <div className="relative">
-          <img className='absolute top-0 left-0 z-1 h-[146px]' src='/Rectangle 107.svg'/>
-          <img  src='/Rectangle 108.svg'/>
-        </div>
         <section id="footer">
           <FooterSection/>
         </section>

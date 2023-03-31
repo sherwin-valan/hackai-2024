@@ -74,9 +74,9 @@ function AboutSection()
                     </div>
                 </div> 
             </div>
-        <div className='relative z-0'>
-            <img className="text-center mx-auto mt-10 w-full md:w-9/12 z-0" src="/chip.png" alt="about hackai chips"/>
-        </div>
+            <div className='relative z-0'>
+                <img className="text-center mx-auto mt-10 w-full md:w-9/12 z-0" src="/chip.svg" alt="about hackai chips"/>
+            </div>
         </div>
         
         </>

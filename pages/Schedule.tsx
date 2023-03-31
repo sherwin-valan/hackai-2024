@@ -14,7 +14,7 @@ function Schedule()
             </div>
         </div>
         <div className='justify-center h-center flex pr-10'>
-            <img className='justify-center h-center flex pr-40' src='schedule.png'></img>
+            <img className='justify-center h-center flex pr-40' src='schedule.svg'></img>
             <Typography fontFamily={"var(--lucidity)"} className='pt-40'>
                 Come back later for more detail!
             </Typography>
