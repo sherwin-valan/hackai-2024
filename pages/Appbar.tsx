@@ -20,12 +20,12 @@ export default function Landing() {
   return (
     <>
       <AppbarBG transparencyThreshold="0.1" className="z-10"/>
-      <nav className="bg-transparent w-[100vw] h-[5rem] grid grid-cols-2 md:grid-cols-3 place-items-center">
+      <nav className="bg-[#1A2025] w-[100vw] h-[5rem] grid grid-cols-2 md:grid-cols-3 place-items-center">
         <div onClick={() => {handleItemClick('landing')}} className="flex gap-4 items-center [cursor:pointer]">
           <img src="hackai-logo.png" className="h-[3rem] object-contain"/>
           <div className="">Hack AI</div>
         </div>
-        <div className="gap-10 col-span-2 justify-self-start hidden md:flex lg:col-span-1 lg:justify-self-center">
+        <div className="dark-blue gap-10 col-span-2 justify-self-start hidden md:flex lg:col-span-1 lg:justify-self-center">
           <div onClick={() => {handleItemClick('about')}} className="[cursor:pointer]">About</div>
           <div onClick={() => {handleItemClick('schedule')}} className="[cursor:pointer]">Schedule</div>
           <div onClick={() => {handleItemClick('faqs')}} className="[cursor:pointer]">Faqs</div>
