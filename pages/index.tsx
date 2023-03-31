@@ -12,34 +12,6 @@ import { Typography, Button, Menu, MenuItem } from '@mui/material';
 import FAQs from './FAQs';
 import Partners from './Partners';
 
-// interface Card {
-//   element: HTMLElement;
-//   flipped: boolean;
-// }
-
-// const cards: Card[] = [];
-
-// const flipCard = (card: Card) => {
-//   if (card.flipped) {
-//     card.element.classList.remove('card-flip');
-//   } else {
-//     card.element.classList.add('card-flip');
-//   }
-//   card.flipped = !card.flipped;
-// };
-
-// const initCards = () => {
-//   const deck = document.getElementById('deck');
-//   const cardElements = deck.getElementsByClassName('card');
-//   for (let i = 0; i < cardElements.length; i++) {
-//     //const cardElement = cardElements[i];
-//     //const card: Card = {};
-//     //cardElement.addEventListener('click', () => flipCard(card));
-//     //cards.push(card);
-//   }
-// };
-
-// initCards();
 
 export default function HomePage() {
   {/*for the appbar*/}

@@ -36,7 +36,7 @@ function FooterSection()
                         <button onClick={() => window.open("https://www.instagram.com/utdais/", "_blank")}><img src='/instagram.svg'/></button>
                         <button onClick={() => window.open("https://www.youtube.com/@artificialintelligencesoci9846", "_blank")}><img src='/youtube.svg'/></button>
                         <button onClick={() => window.open("https://www.linkedin.com/company/ais-utd/", "_blank")}><img src='/linkedin.svg'/></button>
-                        <button onClick={() => window.open("https://discord.gg/tEfAAHpFAX", "_blank")}><img src='/discord.svg'/></button>
+                        <button onClick={() => window.open("https://discord.gg/nKdr4jvK", "_blank")}><img src='/discord.svg'/></button>
                     </div>
                 </div>
             </div>
