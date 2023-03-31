@@ -53,7 +53,7 @@ function Tracks() {
             className="card"
             onMouseEnter={flip1}
             animate={{ rotateY: isHovered1 ? 180 : 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 1.5 }}
             onHoverStart={() => setHovered1(true)}
             onHoverEnd={() => setHovered1(false)}>
         {!isHovered1 ? (
@@ -63,9 +63,9 @@ function Tracks() {
                 </div>
             </div>
         ) :(
-            <div className="back">
+            <div className="">
                 <div className="justify-center h-center flex">
-                    <img src="card_b_athletes.png" className="flex text-center px-[1rem] flip" alt="track1"/>
+                    <img src="card_b_athletes.png" className="flex text-center px-[1rem]" alt="track1"/>
                 </div>
             </div>
         )}
@@ -74,7 +74,7 @@ function Tracks() {
         className="card"
         onMouseEnter={flip2}
         animate={{ rotateY: isHovered2 ? 180 : 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 1.5 }}
         onHoverStart={() => setHovered2(true)}
         onHoverEnd={() => setHovered2(false)}>
         {!isHovered2 ? (
@@ -84,7 +84,7 @@ function Tracks() {
                 </div>
             </div>
         ) :(
-            <div className="back">
+            <div className="">
                 <div className="justify-center h-center flex">
                     <img src="card_b_brainiacs.png" className="flex text-center px-[1rem]" alt="track2"/>
                 </div>
@@ -95,7 +95,7 @@ function Tracks() {
         className="card"
         onMouseEnter={flip3}
         animate={{ rotateY: isHovered3 ? 180 : 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 1.5 }}
         onHoverStart={() => setHovered3(true)}
         onHoverEnd={() => setHovered3(false)}>
         {!isHovered3 ? (
@@ -105,9 +105,9 @@ function Tracks() {
                 </div>
             </div>
         ) :(
-            <div className="back">
+            <div className="">
                 <div className="justify-center h-center flex">
-                    <img src="card_b_saints.png" className="flex text-center px-[1rem] flip" alt="track3"/>
+                    <img src="card_b_saints.png" className="flex text-center px-[1rem]" alt="track3"/>
                 </div>
             </div>
         )}
@@ -116,7 +116,7 @@ function Tracks() {
             className="card"
             onMouseEnter={flip4}
             animate={{ rotateY: isHovered4 ? 180 : 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 1.5 }}
             onHoverStart={() => setHovered4(true)}
             onHoverEnd={() => setHovered4(false)}>
         {!isHovered4 ? (
@@ -126,7 +126,7 @@ function Tracks() {
                 </div>
             </div>
         ) :(
-            <div className="back">
+            <div className="">
                 <div className="justify-center h-center flex">
                     <img src="card_b_creatives.png" className="flex text-center px-[1rem]" alt="track4"/>
                 </div>

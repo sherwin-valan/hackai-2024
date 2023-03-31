@@ -88,7 +88,7 @@ export default function HomePage() {
         <section id="faqs" style={{marginTop: '3rem'}}>
           <FAQs />
         </section>
-        <section style={{backgroundColor: '#FEF9EE'}} id="sponsors">
+        <section style={{backgroundColor: '#FEF9EE'}} id="partners">
           <img width="100%" src="top-red-triangles.svg" style={{marginTop: '-1px'}} />
           <Partners />
           <img width="100%" src="bottom-red-triangles.svg" />
