@@ -100,7 +100,7 @@ function WorkWithUsSection()
                         </div>
                         <div className='flex mt-16 flex-row items-center justify-center pt-6'>
                             <Button onClick={() => location.href="mailto:contact@aisociety.io"} className='bg-[#FEF9EE] w-[170px] text-[#B93648] hover:bg-[#B93648] hover:text-[#FEF9EE]' variant="contained">
-                                <Typography fontFamily={"var(--cooper)"} textTransform={"none"}>Sponsor Packet</Typography>
+                                <Typography fontFamily={"var(--cooper)"} textTransform={"none"}>Contact Us</Typography>
                             </Button>
                         </div>
                     </div>

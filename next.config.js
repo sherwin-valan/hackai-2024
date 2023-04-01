@@ -73,7 +73,7 @@ module.exports = {
       },
       {
         source: '/dc',
-        destination: 'https://discord.com/invite/7fZQZyP',
+        destination: 'https://discord.gg/nKdr4jvK',
         basePath: false,
         permanent: true,
       },

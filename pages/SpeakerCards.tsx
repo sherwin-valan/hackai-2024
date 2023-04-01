@@ -34,7 +34,7 @@ function SpeakerCards()
         transition={{layout: {duration: 0.3, type: "linear", bounce: 0}}}
       >
         <motion.div className="relative text-black mb-20">
-            <motion.img style={{width: isHovered1 ? 250 : 150}} className="h-80 rounded-md object-cover" src="/speaker.png" alt="speaker image "/>
+            <motion.img style={{width: isHovered1 ? 250 : 150}} className="h-80 rounded-md object-cover" src="/web1.png" alt="speaker image "/>
             <motion.div 
               className="absolute bottom-4 text-left pl-4 leading-4 font-sans"
               animate={{rotate: isHovered1 ? 0 : -90}}
@@ -63,7 +63,7 @@ function SpeakerCards()
         transition={{layout: {duration: 0.3, type: "linear", bounce: 0}}}
       >
         <motion.div className="relative text-black mb-20">
-            <motion.img style={{width: isHovered2 ? 250 : 150}} className="h-80 rounded-md object-cover" src="/speaker.png" alt="speaker image "/>
+            <motion.img style={{width: isHovered2 ? 250 : 150}} className="h-80 rounded-md object-cover" src="/web2.png" alt="speaker image "/>
             <motion.div 
               className="absolute bottom-4 text-left pl-4 leading-4 font-sans"
               animate={{rotate: isHovered2 ? 0 : -90}}
@@ -92,7 +92,7 @@ function SpeakerCards()
         transition={{layout: {duration: 0.3, type: "linear", bounce: 0}}}
       >
         <motion.div className="relative text-black mb-20">
-            <motion.img style={{width: isHovered3 ? 250 : 150}} className="h-80 rounded-md object-cover" src="/speaker.png" alt="speaker image "/>
+            <motion.img style={{width: isHovered3 ? 250 : 150}} className="h-80 rounded-md object-cover" src="/web3.png" alt="speaker image "/>
             <motion.div 
               className="absolute bottom-4 text-left pl-4 leading-4 font-sans"
               animate={{rotate: isHovered3 ? 0 : -90}}
