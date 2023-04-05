@@ -24,7 +24,7 @@ function AppbarBG(props)
 
   return(
     <>
-      <animated.div className="absolute bg-[#555555] w-[100vw] h-[5rem] -z-10"
+      <animated.div className="absolute bg-[#1A2025] w-[100vw] h-[5rem] -z-10"
       style={{ opacity: opac }}/>
     </>
   )
