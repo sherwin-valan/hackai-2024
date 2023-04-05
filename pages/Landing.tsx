@@ -41,7 +41,7 @@ export default function Landing() {
           sm:mx-[2vw] sm:my-[2vh] sm:h-[70vh] sm:w-[70vw]
           med:mx-[2vw] med:my-[2vh] med:h-[60vh] med:w-[60vw]
         -z-10"/>
-      </div>``
+      </div>
       <div className="absolute text-center text-[#7797A2] [lineHeight:1] font-bold h-[100vh] w-[100vw] z-0 text-[calc(min(3vh,3vw))]">
         <div className="-mb-[calc(min(1.8vh,1.8vw))]
           mt-[calc(49.5vh-min(1.8vh,1.8vw)+min(0.9vh,0.9vw)-min(5vh,5vw)-3px-min(1.5vh,1.5vw))]
