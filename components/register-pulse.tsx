@@ -8,7 +8,7 @@ function RegisterPulse(props)
 {
   const pulse = useSpring
   ({
-      from:{ opacity:1, scalex:0.9, scaley:0.6 },
+      from:{ opacity:1.2, scalex:0.9, scaley:0.6 },
       to:{ opacity:0, scalex:1.25 , scaley:2 },
       loop:true,
       delay:0,
