@@ -11,7 +11,7 @@ function RegisterPulse(props)
       from:{ opacity:1, scalex:0.9, scaley:0.6 },
       to:{ opacity:0, scalex:1.25 , scaley:2 },
       loop:true,
-      delay:600,
+      delay:0,
       config:{ mass:10, tension:30, friction:25, clamp:true }
   })
 
