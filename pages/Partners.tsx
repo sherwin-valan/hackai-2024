@@ -2,10 +2,9 @@ import { Box, Typography } from "@mui/material";
 import "@fontsource/hind-siliguri";
 
 const sponserDir = "sponsers"
-const sponsersLogos= [["jp_morgan.svg", "geico.svg"], 
+const sponsersLogos= [["Blackstone.png", "geico.svg"], 
                       [, "Jasper.svg", "TT.svg"], 
-                      ["RISE1.png", "JSOM.svg",  "CAIML.svg"],
-                      ["Blackstone.png"]]
+                      ["RISE1.png", "JSOM.svg",  "CAIML.svg"],]
 const sponsersPath = sponsersLogos.map((row) => row.map((path) => sponserDir + '/' + path))
 
 const fontSize =  {
