@@ -7,28 +7,27 @@ import "@fontsource/hind-siliguri";
 
 function FooterSection()
 {
-      
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
 
     return (
     
-        <div className="mx-auto py-14 sm:px-8 md:px-32 lg:px-44 text-white h-[300px]">
-            <div className='flex flex-row items-center justify-between'>
+        <div className="mx-auto pb-14 sm:px-[5vw] text-white">
+            <div className='flex flex-col sm:flex-row text-center sm:text-left items-center justify-between'>
                 <Box>
                     <Typography fontFamily={"var(--lucidity)"} fontWeight={600} fontSize={40} color="white">
                         HACKAI
                     </Typography>
-                    <div className='w-[450px]'>
+                    <div className='w-[380px]'>
                         <Typography fontFamily={"hind siliguri"} fontSize={17}>
                             Be the change you want to see in the world!
                         </Typography>
                     </div>
                 </Box>
-                <div className='flex flex-col'>
+                <div className='flex flex-col mt-10 sm:mt-0'>
                     <button onClick={() => window.open("https://www.aisutd.org/", "_blank")}>
-                        <Typography fontFamily={"hind siliguri"} fontWeight={600} className='ml-10' fontSize={25} color="white">
-                            AIS Website
+                        <Typography fontFamily={"hind siliguri"} fontWeight={600} className='text-center sm:text-right' fontSize={25} color="white">
+                        AIS Website <img src="www-icon.svg" className="inline h-[1.5rem] object-contain"/>
                         </Typography>
                     </button>
                     <div className='flex flex-row items-center justify-between'>

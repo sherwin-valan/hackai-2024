@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useMediaQuery } from "@mui/material";
 import "@fontsource/hind-siliguri";
 
 const sponserDir = "sponsers"
@@ -13,10 +13,17 @@ const fontSize =  {
 }
 
 function displaySponsers() {
+    const mobile = useMediaQuery('(max-width:1023px)')
+
     return (
         sponsersPath.map((row, key) => {
             return (
-                <Box key={key} sx={{
+                <Box key={key} sx={ mobile ? {
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    pt:2
+                } : {
                     display: "flex",
                     flexDirection: "row",
                     justifyContent: "space-evenly",

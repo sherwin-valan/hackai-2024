@@ -1,4 +1,4 @@
-import { Box, Link, Paper, Typography } from "@mui/material";
+import { Box, Link, Paper, Typography, useMediaQuery } from "@mui/material";
 import "@fontsource/hind-siliguri";
 
 const questions = [
@@ -36,65 +36,98 @@ const fontSizes = {
     bodyCard: "1rem",
 }
 
-function displayListOfQuestions() {
+function displayListOfQuestions(mobile: boolean) {
     return (questions.map((obj, key) => {
         return (
-            <Box key={key} marginBottom='1.5rem' sx={{minWidth: '30%', maxWidth: "47%"}}>
-                <Box marginBottom='0.5rem' sx={{
-                    display: "flex",
-                    alignContent: "center",
-                }}>
-                    <Box marginRight='1rem'>
-                        <img src={obj.icons} style={{height: fontSizes.headingCard}} />
+            <>
+                {mobile ? <div className="h-[20px]"/> : <></>}
+                <Box key={key} marginBottom='1.5rem' sx={mobile ? {} : {minWidth: '30%', maxWidth: "47%"}}>
+                    <Box marginBottom='0.5rem' sx={{
+                        display: "flex",
+                        alignContent: "center",
+                    }}>
+                        <Box marginRight='1rem'>
+                            <img src={obj.icons} style={{height: fontSizes.headingCard}} />
+                        </Box>
+                        <Typography variant="h2" fontSize={fontSizes.headingCard} 
+                                    fontWeight={600} fontFamily='Hind Siliguri'>
+                            {obj.heading}
+                        </Typography>
                     </Box>
-                    <Typography variant="h2" fontSize={fontSizes.headingCard} 
-                                fontWeight={600} fontFamily='Hind Siliguri'>
-                        {obj.heading}
+                    <Typography fontFamily='Hind Siliguri' fontSize={fontSizes.bodyCard}>
+                        {obj.body}
                     </Typography>
                 </Box>
-                <Typography fontFamily='Hind Siliguri' fontSize={fontSizes.bodyCard}>
-                    {obj.body}
-                </Typography>
-            </Box>
+            </>
         );
     }));
 }
 
+function displayMobile() {
+    return(
+        <>
+            <Box sx={{
+                display:"flex",
+                flexDirection: "column",
+                alignItems: "center"
+            }}>
+                <Typography variant="h2" color='#FEF9EE' fontSize={fontSizes.title} 
+                            fontWeight={500} fontFamily={"var(--lucidity)"}>
+                    FAQS
+                </Typography>
+                <Typography marginBottom="2rem" fontSize={fontSizes.heading} fontFamily={"Hind Siliguri"} className="text-center">
+                    Have more questions? Send an email to <Link>contact@aisociety.io</Link>
+                </Typography>
+            </Box>
+            
+            <div className="px-[5vw]">
+                <Paper className="px-[5vw] flex flex-col items-center bg-[#FEF9EE] mb-[50px]">
+                    {displayListOfQuestions(true)}
+                </Paper>
+            </div>
+        </>
+    )
+}
 
 function FAQs() {
-    return (
-        <Box sx={{padding: "5rem"}}>
-            <Box>
-                <Box sx={{
-                    display:"flex",
-                    flexDirection: "column",
-                    alignItems: "center"
-                }}>
-                    <Typography variant="h2" color='#FEF9EE' fontSize={fontSizes.title} 
-                                fontWeight={500} fontFamily={"var(--lucidity)"}>
-                        FAQS
-                    </Typography>
-                    <Typography marginBottom="2rem" fontSize={fontSizes.heading} fontFamily={"Hind Siliguri"}>
-                        Have more questions? Send an email to <Link>contact@aisociety.io</Link>
-                    </Typography>
-                </Box>
-                <Paper sx={{
-                    padding: "5rem",
-                    display: "flex",
-                    flexDirection: "row",
-                    flexWrap: "wrap",
-                    alignContent: "center",
-                    justifyContent: "space-between",
-                    backgroundColor: "#FEF9EE",
-                }}>
-                    {displayListOfQuestions()}
-                    <Box margin="-5rem" marginTop="0rem" width={'40%'}>
-                        <img src="FAQs_cards_pic.svg"/>
+    const mobile = useMediaQuery('(max-width:1023px)')
+
+    if(mobile)
+        return displayMobile()
+    else
+        return (
+            <Box sx={{padding: "5rem"}}>
+                <Box>
+                    <Box sx={{
+                        display:"flex",
+                        flexDirection: "column",
+                        alignItems: "center"
+                    }}>
+                        <Typography variant="h2" color='#FEF9EE' fontSize={fontSizes.title} 
+                                    fontWeight={500} fontFamily={"var(--lucidity)"}>
+                            FAQS
+                        </Typography>
+                        <Typography marginBottom="2rem" fontSize={fontSizes.heading} fontFamily={"Hind Siliguri"}>
+                            Have more questions? Send an email to <Link>contact@aisociety.io</Link>
+                        </Typography>
                     </Box>
-                </Paper>
+                    <Paper sx={{
+                        padding: "5rem",
+                        display: "flex",
+                        flexDirection: "row",
+                        flexWrap: "wrap",
+                        alignContent: "center",
+                        justifyContent: "space-between",
+                        backgroundColor: "#FEF9EE",
+                    }}>
+                        {displayListOfQuestions(false)}
+                        <Box margin="-5rem" marginTop="0rem" width={'40%'}>
+                            <img src="FAQs_cards_pic.svg"/>
+                        </Box>
+                    </Paper>
+                </Box>
             </Box>
-        </Box>
-    );
+        )
 }
 
 export default FAQs;
