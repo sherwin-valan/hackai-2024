@@ -12,7 +12,6 @@ import { Typography, Button, Menu, MenuItem } from '@mui/material';
 import FAQs from './FAQs';
 import Partners from './Partners';
 
-
 export default function HomePage() {
   {/*for the appbar*/}
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);

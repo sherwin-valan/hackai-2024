@@ -20,7 +20,7 @@ export default function Landing() {
   return (
     <>
       <AppbarBG transparencyThreshold="1" className="z-10"/>
-      <nav className="bg-transparent-[#1A2025]  w-[100vw] h-[5rem] grid grid-cols-2 md:grid-cols-3 place-items-center">
+      <nav className="bg-none w-[100vw] h-[5rem] grid grid-cols-2 md:grid-cols-3 place-items-center">
         <div onClick={() => {handleItemClick('landing')}} className="flex gap-4 items-center [cursor:pointer]">
           <img src="hackai-logo.png" className="h-[3rem] object-contain"/>
           <div className="">Hack AI</div>

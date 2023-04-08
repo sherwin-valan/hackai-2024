@@ -1,5 +1,7 @@
 import * as React from 'react';
-import { Typography, Button, Menu, MenuItem } from '@mui/material';
+import { Typography } from '@mui/material';
+import { Fireworks } from 'fireworks-js'
+import RegisterPulse from '../components/register-pulse';
 
 export default function Landing() {
   {/*for the appbar*/}
@@ -16,23 +18,31 @@ export default function Landing() {
     document.getElementById(secName).scrollIntoView()
   };
 
+  setTimeout(() =>
+  {
+    const container = document.getElementById('fireworks') //located in the landing section
+    const fireworks = new Fireworks(container, {rocketsPoint:{min:20, max:80}})
+    fireworks.start()
+  }, 100)
+
   return (
     <>
       <div className="absolute bg-[url('/top-gradient.svg')] h-[10rem] w-[100vw]"/>
-      <div className="absolute bg-[url('/city-bg.png')] bg-no-repeat bg-contain bg-center h-[100vh] w-[100vw] translate-y-[50vh] -z-50"/>
-      <div className="absolute bg-[url('/red-star.png')] bg-no-repeat bg-contain h-[25vh] w-[25vw] mt-[15vh] ml-[25vw] -z-40"/>
+      <div id="fireworks" className="absolute h-[100vh] w-[100vw] -z-50"/>
+      <div className="absolute bg-[url('/city-bg.png')] bg-no-repeat bg-contain bg-center h-[100vh] w-[100vw] translate-y-[50vh] -z-40"/>
+      <div className="absolute bg-[url('/red-star.png')] bg-no-repeat bg-contain h-[25vh] w-[25vw] mt-[15vh] ml-[25vw] -z-30"/>
       <div className="absolute bg-[url('/casino-glow.svg')] bg-no-repeat bg-contain bg-center
         mx-[8vw] my-[8vh] h-[84vh] w-[84vw]
         sm:mx-[13vw] sm:my-[13vh] sm:h-[74vh] sm:w-[74vw]
         med:mx-[18vw] med:my-[18vh] med:h-[64vh] med:w-[64vw]
-      -z-30">
+      -z-20">
         <div className="absolute bg-[url('/casino-sign.png')] bg-no-repeat bg-contain bg-center
           mx-[2vw] my-[2vh] h-[80vh] w-[80vw]
           sm:mx-[2vw] sm:my-[2vh] sm:h-[70vh] sm:w-[70vw]
           med:mx-[2vw] med:my-[2vh] med:h-[60vh] med:w-[60vw]
-        -z-20"/>
+        -z-10"/>
       </div>
-      <div className="absolute text-center text-[#7797A2] [lineHeight:1] font-bold h-[100vh] w-[100vw] -z-10 text-[calc(min(3vh,3vw))]">
+      <div className="absolute text-center text-[#7797A2] [lineHeight:1] font-bold h-[100vh] w-[100vw] z-0 text-[calc(min(3vh,3vw))]">
         <div className="-mb-[calc(min(1.8vh,1.8vw))]
           mt-[calc(49.5vh-min(1.8vh,1.8vw)+min(0.9vh,0.9vw)-min(5vh,5vw)-3px-min(1.5vh,1.5vw))]
           sm:mt-[calc(49.5vh-min(1.8vh,1.8vw)+min(0.9vh,0.9vw)-min(4.5vh,4.5vw)-3px-min(1.5vh,1.5vw))]
@@ -62,9 +72,7 @@ export default function Landing() {
         </p>
         <p className="mt-[6px]">APRIL 15-16</p>
       </div>
-      <button onClick={() => window.open("https://coda.io/form/HackAI-2022_d4OphGKMDDl", "_blank")} className="mt-[83vh] ml-[calc(50vw-8rem)] w-[16rem] h-[4rem] bg-white rounded-[1.3rem] border-[3px] border-black text-black font-bold uppercase hover:[transform:scale(1.07)] z-0">
-        Register Now
-      </button>
+      <RegisterPulse className="absolute mt-[83vh] ml-[calc(50vw-8rem)] w-[16rem] h-[4rem] z-0"/>
     </>
   );
 }
