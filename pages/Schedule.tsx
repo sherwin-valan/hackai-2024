@@ -13,8 +13,8 @@ function Schedule()
                 </Typography>
             </div>
         </div>
-        <div className='justify-center h-center flex pr-10'>
-            <img className='justify-center h-center flex pr-40' src='schedule.svg'></img>
+        <div className='justify-center h-center flex gap-[5vw]'>
+            <img className='w-[45vw] object-contain justify-center hidden lg:block' src='schedule.svg'/>
             <Typography fontFamily={"var(--lucidity)"} className='pt-40'>
                 Come back April 10th for more details!
             </Typography>
