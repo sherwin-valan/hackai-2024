@@ -2,9 +2,9 @@ import { Box, Typography, useMediaQuery } from "@mui/material";
 import "@fontsource/hind-siliguri";
 
 const sponserDir = "sponsers"
-const sponsersLogos= [["Blackstone.png", "geico.svg"], 
-                      [, "Jasper.svg", "TT.svg"], 
-                      ["RISE1.png", "JSOM.svg",  "CAIML.svg"],]
+const sponsersLogos= [["Blackstone.png","geico.svg"], 
+                      ["Jasper.svg", "TT.svg"], 
+                      ["RISE1.png", "JSOM.svg",  "CAIML.svg"],[ "mavs-logo.png", ]]
 const sponsersPath = sponsersLogos.map((row) => row.map((path) => sponserDir + '/' + path))
 
 const fontSize =  {
