@@ -47,27 +47,27 @@ export default function HomePage() {
         <section id="about" className="relative z-0 mt-[min(25vh,25vw)]">
           <AboutSection/>
         </section>
-        <section id="speakers">
+        <section id="speakers" className="relative">
           <SpeakersSection/>
         </section>
-        <section id="tracks">
+        <section id="tracks" className="relative">
           <Tracks />
         </section>
-        <section id="schedule">
+        <section id="schedule" className="relative">
           <Schedule />
         </section>
-        <section id="faqs" style={{marginTop: '3rem'}}>
+        <section id="faqs" className="relative" style={{marginTop: '3rem'}}>
           <FAQs />
         </section>
-        <section style={{backgroundColor: '#FEF9EE'}} id="partners">
+        <section id="partners" className="relative" style={{backgroundColor: '#FEF9EE'}}>
           <img width="100%" src="top-red-triangles.svg" style={{marginTop: '-1px'}} />
           <Partners />
           <img width="100%" src="bottom-red-triangles.svg" />
         </section>
-        <section id="work with us">
+        <section id="work with us" className="relative">
           <WorkWithUsSection/>
         </section>
-        <section id="footer">
+        <section id="footer" className="relative">
           <FooterSection/>
         </section>
       </main>

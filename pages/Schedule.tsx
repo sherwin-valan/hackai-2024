@@ -21,9 +21,8 @@ function Schedule()
                 </Typography>
             </div>
         </div>
-        
-        <div className='justify-center h-center flex pr-10'>
-            <img className='justify-center h-center flex p-20 pl-30' src='schedule.svg'></img>
+        <div className='justify-center h-center flex gap-[5vw]'>
+            <img className='w-[45vw] object-contain justify-center hidden lg:block' src='schedule.svg'></img>
             <Box sx={{ width: '100%' }}>
             <TabContext value={value}>
                 <Tabs
