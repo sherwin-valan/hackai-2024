@@ -25,7 +25,7 @@ export default function Landing() {
           <img src="hackai-logo.png" className="h-[3rem] object-contain"/>
           <div className="">Hack AI</div>
         </div>
-        <div className="dark-blue gap-10 col-span-2 justify-self-start hidden md:flex lg:col-span-1 lg:justify-self-center">
+        <div className="bg-dark-blue gap-10 col-span-2 justify-self-start hidden md:flex lg:col-span-1 lg:justify-self-center">
           <div onClick={() => {handleItemClick('about')}} className="[cursor:pointer]">About</div>
           <div onClick={() => {handleItemClick('schedule')}} className="[cursor:pointer]">Schedule</div>
           <div onClick={() => {handleItemClick('faqs')}} className="[cursor:pointer]">Faqs</div>
