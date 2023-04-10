@@ -42,7 +42,7 @@ function Tracks() {
     <>
     {/* header */}
     <div className="h-center">
-     <div className='flex justify-center items-center h-center'>
+     <div className='flex justify-center items-center h-center pb-20'>
          <img src="slot_machine.png" className="transform scale-50"/>
          <div className="font-sans-CooperHewitt text-4xl text-center">
          <Typography fontFamily={"var(--lucidity)"} className="text-xl md:text-4xl font-bold">TRACKS</Typography>
