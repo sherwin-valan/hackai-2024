@@ -209,7 +209,7 @@ function Schedule()
                     </Grid>
                 </TabPanel>
                 <TabPanel value='three' aria-label='Sunday'>
-                    <Grid container alignItems="center" className='pt-40'>
+                    <Grid container alignItems="center" className='pt-20'>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
                             12:00 am 
                         </Typography>
