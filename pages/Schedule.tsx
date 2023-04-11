@@ -43,18 +43,7 @@ function Schedule()
                     </Typography>
                     <Grid container alignItems="center">
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            4:00 pm  
-                        </Typography>
-                        <Typography style={{ color: "#1A2025" }} className="text-xl md:text-1xl pb-2">    
-                            ------ 
-                        </Typography>
-                        <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            IQ Event
-                        </Typography>
-                    </Grid>
-                    <Grid container alignItems="center">
-                        <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            5:00 pm  
+                            5:00 pm  - 7:00 pm
                         </Typography>
                         <Typography style={{ color: "#1A2025" }} className="text-xl md:text-1xl pb-2">    
                             ------ 
@@ -117,7 +106,7 @@ function Schedule()
                             -----
                         </Typography>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            AI Panel: Palo Alto & Hugging Face
+                            AI Panel
                         </Typography>
                     </Grid>
                     <Grid container alignItems="center">
@@ -128,7 +117,7 @@ function Schedule()
                             ---_
                         </Typography>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            Prompt Generation Workshop
+                            Respell Workshop
                         </Typography>
                     </Grid>
                     <Grid container alignItems="center">
