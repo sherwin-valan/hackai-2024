@@ -14,6 +14,7 @@ function Schedule()
     };
     return (
         <>
+        <div className="justify-center items-center h-center">
         <div className='flex justify-center items-center h-center'>
             <div className="font-sans-CooperHewitt text-4xl text-center p-20">
                 <Typography fontFamily={"var(--lucidity)"} className="text-xl md:text-4xl font-bold">
@@ -22,7 +23,7 @@ function Schedule()
             </div>
         </div>
         <div className='justify-center h-center flex gap-[5vw]'>
-            <img className='w-[45vw] object-contain justify-center hidden lg:block' src='schedule.svg'></img>
+            <img className='w-[45vw] pl-60 object-contain justify-center hidden lg:block' src='schedule.svg'></img>
             <Box sx={{ width: '100%' }}>
             <TabContext value={value}>
                 <Tabs
@@ -36,23 +37,12 @@ function Schedule()
                     <Tab className='text-[#FEF9EE] h-10 w-40' value="three" label="Sunday" />
                 </Tabs>
                 <TabPanel value='one' aria-label='Friday'>
-                    <Typography fontFamily={"var(--hind)"} className="text-md md:text-1xl pt-40 pb-1">    
+                    <Typography fontFamily={"var(--hind)"} className="text-md md:text-1xl pb-1">    
                         **Note: Limited Space**
                     </Typography>
                     <Grid container alignItems="center">
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            4:00 pm  
-                        </Typography>
-                        <Typography style={{ color: "#1A2025" }} className="text-xl md:text-1xl pb-2">    
-                            ------ 
-                        </Typography>
-                        <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            IQ Event
-                        </Typography>
-                    </Grid>
-                    <Grid container alignItems="center">
-                        <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            5:00 pm  
+                            5:00 pm  - 7:00 pm
                         </Typography>
                         <Typography style={{ color: "#1A2025" }} className="text-xl md:text-1xl pb-2">    
                             ------ 
@@ -63,7 +53,7 @@ function Schedule()
                     </Grid>
                 </TabPanel>
                 <TabPanel value='two' aria-label='Saturday'>
-                    <Grid container alignItems="center" className='pt-8'>
+                    <Grid container alignItems="center" className=''>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
                             9:00 am  
                         </Typography>
@@ -115,7 +105,7 @@ function Schedule()
                             -----
                         </Typography>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            AI Panel: Palo Alto & Hugging Face
+                            AI Panel
                         </Typography>
                     </Grid>
                     <Grid container alignItems="center">
@@ -126,7 +116,7 @@ function Schedule()
                             ---_
                         </Typography>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            Prompt Generation Workshop
+                            Respell Workshop
                         </Typography>
                     </Grid>
                     <Grid container alignItems="center">
@@ -208,7 +198,7 @@ function Schedule()
                     </Grid>
                 </TabPanel>
                 <TabPanel value='three' aria-label='Sunday'>
-                    <Grid container alignItems="center" className='pt-20'>
+                    <Grid container alignItems="center" className=''>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
                             12:00 am 
                         </Typography>
@@ -278,7 +268,7 @@ function Schedule()
             </TabContext>
             </Box>
             </div>
-        
+        </div>
         </>
     );
 }
