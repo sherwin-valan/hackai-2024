@@ -30,12 +30,11 @@ function Schedule()
                     value={value}
                     onChange={handleChange}
                     aria-label="labels"
-                    textColor="#FEF9EE"
                     indicatorColor="primary"
                 >
-                    <Tab className='h-10 w-40' value="one" label="Friday" />
-                    <Tab className='h-10 w-40' value="two" label="Saturday" />
-                    <Tab className='h-10 w-40' value="three" label="Sunday" />
+                    <Tab className='text-[#FEF9EE] h-10 w-40' value="one" label="Friday" />
+                    <Tab className='text-[#FEF9EE] h-10 w-40' value="two" label="Saturday" />
+                    <Tab className='text-[#FEF9EE] h-10 w-40' value="three" label="Sunday" />
                 </Tabs>
                 <TabPanel value='one' aria-label='Friday'>
                     <Typography fontFamily={"var(--hind)"} className="text-md md:text-1xl pb-1">    
