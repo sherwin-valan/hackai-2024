@@ -4,7 +4,7 @@ import "@fontsource/hind-siliguri";
 const sponserDir = "sponsers"
 const sponsersLogos= [["Blackstone.png","geico.svg"], 
                       ["Jasper.svg", "TT.svg"], 
-                      ["RISE1.png", "JSOM.svg",  "CAIML.svg"],[ "mavs-logo.png", ]]
+                      ["RISE1.png", "JSOM.svg",  "CAIML.svg"],[ "mavs-logo.png", "AWS_logo_RGB.svg" ]]
 const sponsersPath = sponsersLogos.map((row) => row.map((path) => sponserDir + '/' + path))
 
 const fontSize =  {
