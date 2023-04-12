@@ -66,13 +66,13 @@ function Schedule()
                     </Grid>
                     <Grid container alignItems="center">
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            11:30 am 
+                            11:00 am 
                         </Typography>
                         <Typography style={{ color: "#1A2025" }} className="text-xl md:text-1xl pb-2">    
                             ---_
                         </Typography>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            Hack AI Opening Ceremony
+                            Kickoff Ceremony
                         </Typography>
                     </Grid>
                     <Grid container alignItems="center">
@@ -88,10 +88,10 @@ function Schedule()
                     </Grid>
                     <Grid container alignItems="center">
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            12:45 pm 
+                            1:00 pm 
                         </Typography>
                         <Typography style={{ color: "#1A2025" }} className="text-xl md:text-1xl pb-2">    
-                            ----
+                            ----_
                         </Typography>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
                             Lunch - Potbelly
@@ -116,7 +116,7 @@ function Schedule()
                             ---_
                         </Typography>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            Sponsor Fair
+                            Respell Workshop
                         </Typography>
                     </Grid>
                     <Grid container alignItems="center">
@@ -143,6 +143,17 @@ function Schedule()
                     </Grid>
                     <Grid container alignItems="center">
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
+                            6:00 pm 
+                        </Typography>
+                        <Typography style={{ color: "#1A2025" }} className="text-xl md:text-1xl pb-2">    
+                            ---_
+                        </Typography>
+                        <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
+                            Diagflow Workshop
+                        </Typography>
+                    </Grid>
+                    <Grid container alignItems="center">
+                        <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
                             7:00 pm 
                         </Typography>
                         <Typography style={{ color: "#1A2025" }} className="text-xl md:text-1xl pb-2">    
@@ -157,12 +168,23 @@ function Schedule()
                             8:00 pm 
                         </Typography>
                         <Typography style={{ color: "#1A2025" }} className="text-xl md:text-1xl pb-2">    
-                            -----
+                            ---_
                         </Typography>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            Diagflow Workshop
+                            Factions Minigames
                         </Typography>
-                    </Grid>
+                    </Grid> 
+                    <Grid container alignItems="center">
+                        <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
+                            9:00 pm 
+                        </Typography>
+                        <Typography style={{ color: "#1A2025" }} className="text-xl md:text-1xl pb-2">    
+                            ---_
+                        </Typography>
+                        <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
+                            Talent Show
+                        </Typography>
+                    </Grid> 
                     <Grid container alignItems="center">
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
                             10:00 pm 
