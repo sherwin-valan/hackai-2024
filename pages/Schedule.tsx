@@ -116,7 +116,7 @@ function Schedule()
                             ---_
                         </Typography>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            Sponsor Fair
+                            Respell Workshop
                         </Typography>
                     </Grid>
                     <Grid container alignItems="center">
