@@ -66,13 +66,13 @@ function Schedule()
                     </Grid>
                     <Grid container alignItems="center">
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            11:00 am 
+                            11:30 am 
                         </Typography>
                         <Typography style={{ color: "#1A2025" }} className="text-xl md:text-1xl pb-2">    
                             ---_
                         </Typography>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            Kickoff Ceremony
+                            Hack AI Opening Ceremony
                         </Typography>
                     </Grid>
                     <Grid container alignItems="center">
@@ -88,13 +88,13 @@ function Schedule()
                     </Grid>
                     <Grid container alignItems="center">
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            1:00 pm 
+                            12:45 pm 
                         </Typography>
                         <Typography style={{ color: "#1A2025" }} className="text-xl md:text-1xl pb-2">    
-                            ----_
+                            ----
                         </Typography>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            Lunch
+                            Lunch - Potbelly
                         </Typography>
                     </Grid>
                     <Grid container alignItems="center">
@@ -116,7 +116,7 @@ function Schedule()
                             ---_
                         </Typography>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            Respell Workshop
+                            Sponsor Fair
                         </Typography>
                     </Grid>
                     <Grid container alignItems="center">
@@ -143,24 +143,13 @@ function Schedule()
                     </Grid>
                     <Grid container alignItems="center">
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            6:00 pm 
+                            7:00 pm 
                         </Typography>
                         <Typography style={{ color: "#1A2025" }} className="text-xl md:text-1xl pb-2">    
                             ---_
                         </Typography>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            Dinner
-                        </Typography>
-                    </Grid>
-                    <Grid container alignItems="center">
-                        <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            7:00 pm 
-                        </Typography>
-                        <Typography style={{ color: "#1A2025" }} className="text-xl md:text-1xl pb-2">    
-                            -----
-                        </Typography>
-                        <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                        Diagflow Workshop
+                            Dinner - Genghis Grill
                         </Typography>
                     </Grid>
                     <Grid container alignItems="center">
@@ -168,32 +157,21 @@ function Schedule()
                             8:00 pm 
                         </Typography>
                         <Typography style={{ color: "#1A2025" }} className="text-xl md:text-1xl pb-2">    
-                            ---_
+                            -----
                         </Typography>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            Factions Minigames
+                            Diagflow Workshop
                         </Typography>
                     </Grid>
                     <Grid container alignItems="center">
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            9:00 pm 
-                        </Typography>
-                        <Typography style={{ color: "#1A2025" }} className="text-xl md:text-1xl pb-2">    
-                            ---_
-                        </Typography>
-                        <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            Mystery Game
-                        </Typography>
-                    </Grid>
-                    <Grid container alignItems="center">
-                        <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            11:00 pm 
+                            10:00 pm 
                         </Typography>
                         <Typography style={{ color: "#1A2025" }} className="text-xl md:text-1xl pb-2">    
                             --_
                         </Typography>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            Late Night Snack
+                            Late Night Snack - Insomnia
                         </Typography>
                     </Grid>
                 </TabPanel>
@@ -211,7 +189,7 @@ function Schedule()
                     </Grid>
                     <Grid container alignItems="center">
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            8:00 am 
+                            9:00 am 
                         </Typography>
                         <Typography style={{ color: "#1A2025" }} className="text-xl md:text-1xl pb-2">    
                             ---_
