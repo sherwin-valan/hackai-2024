@@ -69,7 +69,7 @@ export default function Landing() {
           <button onClick={() => window.open("https://www.linkedin.com/company/ais-utd", "_blank")}>
             <img src="linkedin-icon.svg" className="h-[1.5rem] object-contain"/>
           </button>
-          <button onClick={() => window.open("https://discord.gg/nKdr4jvK", "_blank")}>
+          <button onClick={() => window.open("https://discord.gg/YgC62K9qga", "_blank")}>
             <img src="discord-icon.svg" className="h-[1.5rem] object-contain"/>
           </button>
         </div>
