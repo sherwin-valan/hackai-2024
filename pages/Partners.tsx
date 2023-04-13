@@ -2,11 +2,23 @@ import { Box, Typography, useMediaQuery } from "@mui/material";
 import "@fontsource/hind-siliguri";
 
 const sponserDir = "sponsers"
-const sponsersLogos= [["Blackstone.png","geico.svg"], 
-                      ["Jasper.svg", "TT.svg"], 
-                      ["RISE1.png", "JSOM.svg",  "CAIML.svg"],
-                      [ "mavs-logo.png", "AWS_logo_RGB.svg" ],
-                      [ "respell.svg"]]
+const sponsersLogos = [ ["AWS_logo_RGB.svg", "mavs-logo.png", "RISE1.png"],
+                        ["Jasper.svg", "richardson-iq-logo.png", "geico.svg"], 
+                        ["respell.svg", "TT.svg",  "Blackstone.png" ],
+                        ["JSOM.svg", "CAIML.svg"] ]
+const sponsorLinks =    [
+                            "https://aws.amazon.com/machine-learning/",
+                            "https://www.mavs.com/",
+                            "https://jindal.utdallas.edu/centers-of-excellence/retail-innovation-strategy-excellence/",
+                            "https://www.jasper.ai/",
+                            "https://richardsoniq.com",
+                            "https://careers.geico.com/us/en/c/information-technology-jobs",
+                            "https://respell.ai/",
+                            "https://techtitans.org/",
+                            "https://innovation.utdallas.edu/programs/blackstone-launchpad/",
+                            "https://jindal.utdallas.edu/",
+                            "https://cs.utdallas.edu/caiml/"
+                        ]
 const sponsersPath = sponsersLogos.map((row) => row.map((path) => sponserDir + '/' + path))
 
 const fontSize =  {
@@ -18,9 +30,9 @@ function displaySponsers() {
     const mobile = useMediaQuery('(max-width:1023px)')
 
     return (
-        sponsersPath.map((row, key) => {
+        sponsersPath.map((row, rowIndex) => {
             return (
-                <Box key={key} sx={ mobile ? {
+                <Box sx={ mobile ? {
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
@@ -32,8 +44,12 @@ function displaySponsers() {
                     alignItems: "center",
                     pt:2
                 }}>
-                    {row.map((path, key) => 
-                        <img key={key} src={path} />
+                    {row.map( (path, colIndex) => 
+                        <img
+                            src={path}
+                            onClick={() => window.open(sponsorLinks[rowIndex*3 + colIndex], "_blank")}
+                            className="h-[20vh] w-[20vw] object-contain [cursor:pointer]"
+                        />
                     )}
                 </Box>
             );
