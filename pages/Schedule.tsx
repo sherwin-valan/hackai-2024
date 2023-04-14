@@ -116,7 +116,7 @@ function Schedule()
                             ---_
                         </Typography>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            Respell Workshop
+                            Respell x OpenAI Workshop
                         </Typography>
                     </Grid>
                     <Grid container alignItems="center">
@@ -149,7 +149,7 @@ function Schedule()
                             ---_
                         </Typography>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            Diagflow Workshop
+                            DialogFlow Workshop
                         </Typography>
                     </Grid>
                     <Grid container alignItems="center">
@@ -171,7 +171,7 @@ function Schedule()
                             ---_
                         </Typography>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            Factions Minigames
+                            Factions Minigames || Stable Diffusion Workshop
                         </Typography>
                     </Grid> 
                     <Grid container alignItems="center">
