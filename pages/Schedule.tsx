@@ -20,6 +20,9 @@ function Schedule()
                 <Typography fontFamily={"var(--lucidity)"} className="text-xl md:text-4xl font-bold">
                     SCHEDULE
                 </Typography>
+                <Typography fontFamily={"var(--lucidity)"} className="text-lg md:text-xl font-bold text-red-500">
+                    **Disclaimer: we will try our best to accommodate for dietary resitrctions, however please note that we may not be able to**
+                </Typography>
             </div>
         </div>
         <div className='justify-center h-center flex gap-[5vw]'>
