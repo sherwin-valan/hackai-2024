@@ -1,5 +1,5 @@
 import * as React from 'react'; 
-import {Typography, Grid, Tabs, Tab, Box, } from '@mui/material';
+import {Typography, Grid, Tabs, Tab, Box, Link} from '@mui/material';
 import TabPanel from '@mui/lab/TabPanel';
 import TabContext from '@mui/lab/TabContext';
 import "@fontsource/hind-siliguri";
@@ -22,6 +22,9 @@ function Schedule()
                 </Typography>
                 <Typography fontFamily={"var(--lucidity)"} className="text-lg md:text-xl font-bold text-red-500">
                     **Disclaimer: we will try our best to accommodate for dietary restrictions, however please note that we may not be able to**
+                </Typography>
+                <Typography fontFamily={"var(--lucidity)"} className="text-lg md:text-xl font-bold text-blue-500">
+                    <a target="_blank" href="https://aisutd.notion.site/aisutd/HackAI-Hacker-Guide-1a42a12a713341dd9e9c7200054fee47">Click for Hacker Guide</a>
                 </Typography>
             </div>
         </div>
@@ -108,7 +111,7 @@ function Schedule()
                             -----
                         </Typography>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            AI Panel
+                            AI Panel (ECSW 1.315)
                         </Typography>
                     </Grid>
                     <Grid container alignItems="center">
@@ -119,7 +122,7 @@ function Schedule()
                             ---_
                         </Typography>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            Respell Workshop
+                            Respell Workshop (ECSW 1.355)
                         </Typography>
                     </Grid>
                     <Grid container alignItems="center">
@@ -130,7 +133,7 @@ function Schedule()
                             ---_
                         </Typography>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            CV Workshop
+                            CV Workshop (ECSW 1.355)
                         </Typography>
                     </Grid>
                     <Grid container alignItems="center">
@@ -141,7 +144,7 @@ function Schedule()
                             ---_
                         </Typography>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            UTD Chatbot Workshop
+                            UTD Chatbot Workshop (ECSW 1.355)
                         </Typography>
                     </Grid>
                     <Grid container alignItems="center">
@@ -152,7 +155,7 @@ function Schedule()
                             ---_
                         </Typography>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            Diagflow Workshop
+                            Diagflow Workshop (ECSW 1.355)
                         </Typography>
                     </Grid>
                     <Grid container alignItems="center">
