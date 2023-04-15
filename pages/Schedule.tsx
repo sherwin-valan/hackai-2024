@@ -88,6 +88,17 @@ function Schedule()
                     </Grid>
                     <Grid container alignItems="center">
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
+                            12:15 pm 
+                        </Typography>
+                        <Typography style={{ color: "#1A2025" }} className="text-xl md:text-1xl pb-2">    
+                            ----
+                        </Typography>
+                        <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
+                            Revive Workshop
+                        </Typography>
+                    </Grid>
+                    <Grid container alignItems="center">
+                        <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
                             1:00 pm 
                         </Typography>
                         <Typography style={{ color: "#1A2025" }} className="text-xl md:text-1xl pb-2">    
@@ -165,13 +176,24 @@ function Schedule()
                     </Grid>
                     <Grid container alignItems="center">
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
+                            7:30 pm 
+                        </Typography>
+                        <Typography style={{ color: "#1A2025" }} className="text-xl md:text-1xl pb-2">    
+                            ---_
+                        </Typography>
+                        <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
+                            Stable Diffusion Workshop
+                        </Typography>
+                    </Grid> 
+                    <Grid container alignItems="center">
+                        <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
                             8:00 pm 
                         </Typography>
                         <Typography style={{ color: "#1A2025" }} className="text-xl md:text-1xl pb-2">    
                             ---_
                         </Typography>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            Factions Minigames || Stable Diffusion Workshop
+                            Factions Minigames
                         </Typography>
                     </Grid> 
                     <Grid container alignItems="center">
