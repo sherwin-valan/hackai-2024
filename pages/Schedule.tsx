@@ -122,7 +122,7 @@ function Schedule()
                             ---_
                         </Typography>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            Respell Workshop (ECSW 1.355)
+                            Respell x OpenAI Workshop (ECSW 1.355)
                         </Typography>
                     </Grid>
                     <Grid container alignItems="center">
@@ -155,7 +155,7 @@ function Schedule()
                             ---_
                         </Typography>
                         <Typography fontFamily={"var(--hind)"} className="text-xl md:text-1xl pb-2">    
-                            Diagflow Workshop (ECSW 1.355)
+                            DialogFlow Workshop (ECSW 1.355)
                         </Typography>
                     </Grid>
                     <Grid container alignItems="center">
