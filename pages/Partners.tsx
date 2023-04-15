@@ -5,7 +5,7 @@ const sponserDir = "sponsers"
 const sponsersLogos = [ ["AWS_logo_RGB.svg", "mavs-logo.png", "RISE1.png"],
                         ["Jasper.svg", "richardson-iq-logo.png", "geico.svg"], 
                         ["respell.svg", "TT.svg",  "Blackstone.png" ],
-                        ["JSOM.svg", "CAIML.svg"] ]
+                        ["JSOM.svg", "CAIML.svg", "re-vvive-logo.png"] ]
 const sponsorLinks =    [
                             "https://aws.amazon.com/machine-learning/",
                             "https://www.mavs.com/",
@@ -17,7 +17,8 @@ const sponsorLinks =    [
                             "https://techtitans.org/",
                             "https://innovation.utdallas.edu/programs/blackstone-launchpad/",
                             "https://jindal.utdallas.edu/",
-                            "https://cs.utdallas.edu/caiml/"
+                            "https://cs.utdallas.edu/caiml/",
+                            "https://re-vive.com/",
                         ]
 const sponsersPath = sponsersLogos.map((row) => row.map((path) => sponserDir + '/' + path))
 
