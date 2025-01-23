@@ -9,6 +9,13 @@ module.exports = {
         permanent: true,
       },      
       {
+        source: '/apply',
+        destination: 
+          'https://coda.io/form/HackAI-2025-Application_dopZAz0GV1s',
+        basePath: false,
+        permanent: true,
+      },  
+      {
         source: '/hackreason-22',
         destination:
           'https://docs.google.com/forms/d/e/1FAIpQLScHzA9r-_dq5dwbWmwT38wr67IlGaa7TBdP6PNRGANRB7N52w/viewform',
